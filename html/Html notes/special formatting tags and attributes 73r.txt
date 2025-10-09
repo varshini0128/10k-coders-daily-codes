@@ -1,0 +1,109 @@
+core attributes:
+----------------
+->which gives the additional information
+ to the particular tag.
+->name="value"
+types:
+------
+->style
+-------
+->it is a css property and it is used to give the 
+styling to the particular tag.
+syntax:
+style="color:blue;"
+
+->title
+---------
+->it is used to give the tooltip to the cursor.
+
+->id:-
+->class:-
+
+center tag:
+-----------
+->it is used to center the content in the web page.
+syntax:
+------
+<center></center>
+
+depricated tags:
+----------------
+->which are removed from the html-5 and kept in the 
+css.
+->ex:center tag,big tag
+
+special formatting tags:
+-------------------------
+->quote:
+--------
+->it is used write the quotations.
+->it gives the quotation marks by default.
+->it is a inline level element.
+->it is a paired tag.
+syntax:
+------
+<q>save the tiges</q>
+
+marquee tag:
+------------
+
+attributes:
+-----------
+->behaviour
+------------
+values:
+-------
+->scroll(default)
+->slide
+->alternate
+
+direction:
+---------
+->to change the direction of the content.
+->values:
+---------
+left,right,up,down
+
+scrollamount:
+-------------
+->it is used to increase or decrease the 
+scrollamount of the content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

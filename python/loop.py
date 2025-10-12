@@ -12,11 +12,27 @@
 # for i in list1:
 #     print(i)
 
-# range(): It is used to generate numbers over a limit
+# range(): It is used to generate numbers over a limit.If we dont pass the start value to the range it will starts from zero
+# syntax : range(start,stop,step)
+# # start indicates where to Start
+# stop indicates where to stop 
+# step indicates how many values to skip 
+#step is optional 
+
+list2= list(range(1,11,3))
+print(list2)
+
+list1=list(range(1,11,-1))
+print(list1)
+list2=list(range(11,1,-1))
+print(list2)
+
+str1='varsh'
+print(len(str1))
 
 # print(list(range(1,500)))
 
-#len(): It is used to find the number of values in a sequence
+# # len(): It is used to find the number of values in a sequence
 # print(len(list1))
 # str1='varsh'
 # print(len(str1))
@@ -33,8 +49,8 @@
 # for i in names:
 #     print(i[len(i) // 2])
 
-#String concatenation and replication:
-#adding two strings is called string concatenation.
+# #String concatenation and replication:
+# #adding two strings is called string concatenation.
 # a='5'
 # b='10'
 # print(a+b)
@@ -48,5 +64,7 @@
 # print(name1+ ' ' +name2)
 
 
-for i in range(1,6):
-    print('*'*i)
+# for i in range(1,6):
+#     print('*'*i)
+
+

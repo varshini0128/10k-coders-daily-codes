@@ -4,6 +4,6 @@ a,b = b,a
 print(f"value of a:{a}")
 print(f"value of b:{b}")
 
-
+#slicing
 s = "Python"
 print(s[1:-1])

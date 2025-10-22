@@ -41,9 +41,7 @@ def marks(**marks):
 marks(maths='95',phys='84',eng='63',nlp='75',chem='94')
 
 
-
-
-
+#Write a program to form a sentence out of words given at function calling to a variable length parameter.
 
 def sentence_form(*words):
     sentence = ""  

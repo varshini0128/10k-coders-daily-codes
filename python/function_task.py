@@ -25,3 +25,32 @@ final_bill = total_bill(
     delivery_charge=50
 )
 print("Total Bill: ", final_bill)
+
+
+
+#write a variable length keyword arguements function to calculate total and percentage of a student in different subjects
+
+def marks(**marks):
+    total=0
+    percentage=100
+    for i in marks:
+        total+=int(marks[i])
+        percentage= (total / (len(marks)*100))*100
+    print('total: ',total)
+    print('percentage: ',percentage)
+marks(maths='95',phys='84',eng='63',nlp='75',chem='94')
+
+
+
+
+
+
+def sentence_form(*words):
+    sentence = ""  
+    for word in words:
+        sentence += word + " "  
+    return sentence
+
+sentence = sentence_form("My", "name", "is", "varshini", ",", "I", "am", "from", "hyd")
+print("Formed Sentence:", sentence)
+

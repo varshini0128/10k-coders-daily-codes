@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Page</title>
+</head>
+<body>
+    <h2>Welcome!</h2>
+    <p id="displayName"></p>
+
+    <script>
+        // Get the URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('username'); // Get 'username' value
+
+        // Display it on the page
+        if (name) {
+            document.getElementById('displayName').textContent = `Hello, ${name}! 👋`;
+        } else {
+            document.getElementById('displayName').textContent = "No name received 😅";
+        }
+    </script>
+</body>
+</html>

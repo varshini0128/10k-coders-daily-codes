@@ -50,5 +50,8 @@ else:
     print('it is not integer type')
 
 
-# str5 = "varshini siliveri"
-# if varsh in str5:
+str5 = "varshini siliveri"
+if 'shini' in str5:
+    print('y')
+else:
+    print('n')

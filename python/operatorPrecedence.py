@@ -1,5 +1,5 @@
 #Operator Precedence and Associativity:
-#Operator precedence is used when there are more than on eor more than than one operator in an expression 
+#Operator precedence is used when there are more than one or more than than one operator in an expression 
 #it is used to determine which operation to perform first
  
 

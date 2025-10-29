@@ -27,20 +27,20 @@ fun1()
 #     print(var1)
 # outer_func()
 
-# def func1():
-#     a=10
-#     b=20
-#     var=a+b
-#     print(var)
-#     def func2():
-#         a1=2
-#         b2=3
-#         var1=a1*b2
-#         print(var1)
-#         print(var) #can acces var from outer function
-#     func2()
-#     # print(var)
-#     # print(var1)  #gives error cant acces var from inner function in outside function
+def func1():
+    a=10
+    b=20
+    var=a+b
+    print(var)
+    def func2():
+        a1=2
+        b2=3
+        var1=a1*b2
+        print(var1)
+        print(var) #can acces var from outer function
+    func2()
+    print(var)
+    # print(var1)  #gives error cant acces var from inner function in outside function
 
 
 

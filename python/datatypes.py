@@ -4,12 +4,12 @@
 
 # primitive are immutable 
 # integer type  
-var2 = 2e3 # we defined a variable with a integer daata type 
+var2 = 2e3 # we defined a variable with a integer data type 
 print(var2)
 
 #float 
 float1 = 3.3
-print(type(float1))
+print(type(float1)) 
 
 #string example
 str4 = 'varsh'
@@ -91,7 +91,7 @@ print(type(nonevalue))
 
 list1= [1,3.3,"string", True, None, 3+6j]
 print(list1)
-# to add a value to an existing list, i use append()
+# to add a value to an existing list, we use append()
 # list1.append("varsh")
 # print(list1)
 
@@ -105,7 +105,7 @@ list1[-2] = False
 print(list1)
 print(len(list1))  #len(): returns no of values in a sequence
 print(list1.count(3.3)) #count(): used to get the number of time a value is repeated
-print(list1.count("varsh")) #count(): used to get the number of time a
+print(list1.count("varsh")) #count(): used to get the number of time a value is repeated
 
 
  #tuples: in tuple we can provide data types and list also access the values using indexing .
@@ -195,6 +195,9 @@ bool2 = True #note in python true value is considered as 1 and  false as 0
 int4 = 4
 print(bool2+int4)
 
+v=6
+n=True
+print(v+n)
 str1 ="varshini"
 print(list(str1))
 print(set(str1))

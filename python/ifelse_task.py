@@ -1,65 +1,65 @@
-#positive negative zero
+# #positive negative zero
 
-num = int(input('Enter a number:'))
-if num==0:
-    print('It is zero ')
-elif num>0:
-    print('It is a positive number')
-else:
-    print('It is a negative number')
+# num = int(input('Enter a number:'))
+# if num==0:
+#     print('It is zero ')
+# elif num>0:
+#     print('It is a positive number')
+# else:
+#     print('It is a negative number')
 
-#even odd numbers
+# #even odd numbers
 
-val1=int(input('Enter a number'))
-if val1%2==0:
-    print('even number')
-else:
-    print('odd number')
+# val1=int(input('Enter a number'))
+# if val1%2==0:
+#     print('even number')
+# else:
+#     print('odd number')
 
-#greatest of three numbers
-num1=int(input('enter first number:'))
-num2=int(input('Enter second number:'))
-num3=int(input('Enter third number:'))
+# #greatest of three numbers
+# num1=int(input('enter first number:'))
+# num2=int(input('Enter second number:'))
+# num3=int(input('Enter third number:'))
 
-if num1>num2 and num1>num3:
-    print(num1,'is greater')
-elif num2>num1 and num2 > num3:
-    print(num2,'is greater')
-elif num3>num1 and num3>num2:
-    print(num3,'is greater')
+# if num1>num2 and num1>num3:
+#     print(num1,'is greater')
+# elif num2>num1 and num2 > num3:
+#     print(num2,'is greater')
+# elif num3>num1 and num3>num2:
+#     print(num3,'is greater')
 
-#AGE category :
-age=int(input('Enter your age: '))
-if age<13:
-    print('child')
-elif age==13 or age<=19:
-    print('Teen')
-else:
-    print('Adult')
-
-
-#divisible by 5 and 11:
-int1=int(input('Enter a number'))
-if int1%5==0 and int1%11==0:
-    print('given number is divisble by both 5 and 11')
-else:
-    print('given number is not divisible by both 5 and 11')
-
-#leap year 
-
-year=int(input('Enter year:'))
-if year%4==0 and year%100!=0 or year%400==0:
-    print('it is a leap year')
-else:
-    print('It is not a leap year')
+# #AGE category :
+# age=int(input('Enter your age: '))
+# if age<13:
+#     print('child')
+# elif age==13 or age<=19:
+#     print('Teen')
+# else:
+#     print('Adult')
 
 
-#Pass or Fail 
-marks=int(input('Enter your marks out of 100: '))
-if marks>=40:
-    print('Pass')
-else:
-    print('Fail')
+# #divisible by 5 and 11:
+# int1=int(input('Enter a number'))
+# if int1%5==0 and int1%11==0:
+#     print('given number is divisble by both 5 and 11')
+# else:
+#     print('given number is not divisible by both 5 and 11')
+
+# #leap year 
+
+# year=int(input('Enter year:'))
+# if year%4==0 and year%100!=0 or year%400==0:
+#     print('it is a leap year')
+# else:
+#     print('It is not a leap year')
+
+
+# #Pass or Fail 
+# marks=int(input('Enter your marks out of 100: '))
+# if marks>=40:
+#     print('Pass')
+# else:
+#     print('Fail')
 
 #vowel or consonant
 char1=input('Enter a character: ')

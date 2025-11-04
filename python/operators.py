@@ -224,7 +224,7 @@ print(36656 % 36000) #prints remainder
 # 5. << (Left Shift)
 # 6. >> (Right Shift)
 anni = 33
-alex = 22
+alex = 8
 print(anni & alex)
 print(alex | anni)
 print(~alex)
@@ -232,3 +232,4 @@ print(alex>>2)
 print(anni<<3)
 print(anni^alex)
 print(~5)
+print(alex>>1)

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Assignment 1 – Basic HTML Display Features</title>
+    <style>
+        /* --- Page setup: fixed A4-like page on any device --- */
+        :root {
+            /* A4 at ~96 DPI: 794 x 1123 px */
+            --page-w: 794px;
+            --page-h: 1123px;
+            --page-margin: 48px;
+            /* inner padding */
+            --base-font: 14pt;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background: #f2f2f2;
+            /* light gray backdrop to emphasize the page */
+            font-family: "Times New Roman", Times, serif;
+            color: #000;
+        }
+
+        .page {
+            width: var(--page-w);
+            min-height: var(--page-h);
+            margin: 24px auto;
+            /* center the page */
+            background: #fff;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, .15);
+            padding: var(--page-margin);
+            box-sizing: border-box;
+            line-height: 1.35;
+            font-size: var(--base-font);
+        }
+
+        /* Print settings so it also prints as real A4 */
+        @page {
+            size: A4 portrait;
+            margin: 25mm;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: auto;
+                min-height: auto;
+                padding: 0;
+            }
+        }
+
+        /* Typography helpers matching the specimen */
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0 0 14px;
+        }
+
+        h1.title {
+            text-align: center;
+            font-size: 18pt;
+            margin-top: 6px;
+            margin-bottom: 18px;
+        }
+
+        .subtitle {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 14pt;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .smallnote {
+            font-size: 11pt;
+        }
+
+        .big-heading {
+            font-size: 18pt;
+            font-weight: 700;
+            margin: 16px 0 8px;
+        }
+
+        hr.rule {
+            border: none;
+            border-top: 2px solid #000;
+            margin: 10px 0 16px;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: x-large;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .u {
+            text-decoration: underline;
+        }
+
+        .big {
+            font-size: 36pt;
+            vertical-align: text;
+        }
+
+        .quote {
+            margin: 10px 0 14px 24px;
+            padding-left: 16px;
+            border-left: 4px solid #ccc;
+        }
+
+        .red {
+            color: #d11;
+        }
+
+        .green {
+            color: #0a7a0a;
+        }
+
+        .blue {
+            color: #1a52c6;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <h1 class="title">HTML</h1>
+        <div class="subtitle">Assignment 1</div>
+        <p class="smallnote">
+            <b>HTML tags on text arrangement, style, color. Design a page which looks like the text given
+                below.</b>
+        </p>
+
+        <h2 class="big-heading">Assignment 1: Basic HTML Display Features</h2>
+
+        <p>Here is an example of a horizontal rule:</p>
+        <hr class="rule" />
+
+        <p>To begin, we can change the</p>
+
+        <p class="bold">header size</p>
+
+        <p>
+            and <span class="u">color of <span class="red">letters</span></span> seen on the screen. The
+            <span class="big">font size</span> can be changed as
+            well, and actually gives more choices.
+        </p>
+
+        <p>
+            We can also change the appearance of words on the screen. This shows some differing
+            word types in a blocked quote.
+        </p>
+
+        <div>
+            <p>
+                Now is the <span class="italic">time</span> for all good <span class="bold">people</span> to
+                <span class="bold">come</span> to the <span class="italic">aid</span> of their country.
+            </p>
+        </div>
+
+        <p>That was also an example of a nested command.</p>
+
+    </main>
+     <main class="page">
+    <h1>Page 2 Content</h1>
+    <p>This is the second A4 sheet.</p>
+  </main>
+
+   <main class="page">
+    <h1>Page 3 Content</h1>
+    <p>This is the third A4 sheet.</p>
+  </main>
+</body>
+
+</html>

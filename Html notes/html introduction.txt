@@ -1,0 +1,153 @@
+Html:
+-----
+webpage:
+--------
+->which is created by using .html
+ extension
+
+website:
+---------
+->collection of webpages is known as
+website.
+ex:zomato,netflix,all ecommers web sites.
+
+webserver:
+-----------
+->collection of websites is known
+ as webserver.
+ex:google chrome,firefox,
+microsoftedge
+
+URL:
+----
+->uniform resource locator
+
+https://www.google.com
+
+->https:hyper text transfer protocal
+->it gives set of rules.
+
+->www:world wide web
+->https://www(domani)
+->google.com(domain name)
+
+static webpage::
+----------------
+->static webpage is which cannot
+ change to everyend user.
+->page reloading is fast.
+->data changing will be manually.
+ex:google,wikipedia
+
+
+dynamic webpages:
+------------------
+->which changes to every enduser.
+->page reloading will be slow
+ database is present init.
+->data will done automatically.
+ex:all ott websites,ecommerce,
+social media.
+
+single page webpage:
+--------------------
+->which has only single page init.
+->page reloading will be faster.
+->data base present.
+->dynamic in nature because 
+database is present.
+ex:whatsapp,telegram,gmail
+
+multipage applications:
+------------------------
+->which containes more than 
+one webpage is known as multipage
+ applications.
+->page reloading will be slow.
+->data is present in the multipage 
+appications.
+->dynamic in nature.
+ex:flipkart,amazon prime,netflix
+
+history of html:
+----------------
+->transfer the data.
+->structure
+->html was introduced by the
+ "tim bernerse lee".
+In the year of 1993.
+->html-5(current version)
+(in the year of 2012)
+->HTML-5 updations:
+--------------------
+1>semantic tags
+2>multi media tags
+3>local and session storage.
+4>geo loccation
+
+
+recap:
+------
+->webpage
+->website
+->webserver
+->url
+->static and dynamic
+->single page and multipage applications
+->history of html
+->html-5 updations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -58,5 +58,5 @@ list3=[1,2,3,4,5,6]
 reduce_val=reduce(lambda num1,num2: num1+num2,list1)
 print(reduce_val)
 
-namess=['Ajith Kumar','Viswa Teja','Naga Swarop','Samuel Paul','Vishnu Varshan']
+namess=['Ajith Kumar','Viswa Teja','Naga Swarop','Samuel Paul','Vishnu Vardhan']
 # op:[AK,VT,NS,SP,VV]

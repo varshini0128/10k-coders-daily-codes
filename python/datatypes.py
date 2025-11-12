@@ -4,18 +4,54 @@
 
 # primitive are immutable 
 # integer type  
-var2 = 2e3 # we defined a variable with a integer data type 
+var2 = 2e3 # we defined a variable with a float data type 
 print(var2)
+
+c=3e1 #printing float num without '.'  so we use 'e' and e=10**1/2/3/5/4...........
+c1=3E1 #we can use 'e' and 'E' 
+print(c1)
+print(c)
+print(type(c))
+
 
 #float 
 float1 = 3.3
 print(type(float1)) 
 
 #string example
+# string is a sequence of character enclosed in single quotes'',"",''' ''',once defined it cannot be changed 
+# features of string: 
+        # immutable, 
+        # ordered,
+        # iterable,
+        # supports for various methods like upper(),find(),replace()
+        #can be concatenated using + but can use * for string repeatation
 str4 = 'varsh'
 str5 = '22'
+print(str4 +' '+ str5)
+print(str4*2)
 str6 = '7.0'
 print(type(str4),type(str5),type(str6), str4.upper(), str5.lower()) #upper() & lower()  are used to convert a string to upper case and lower case
+
+
+#count the num of char in a string
+name='varshini'
+count=0
+for x in name:
+    count+=1
+print(count)
+a=97
+print(chr(a))
+b='B'
+print(ord(b))
+
+
+#printing Alphabet
+for x in range(65,91):
+    print(chr(x))
+
+#count the each char count
+k='python'
 
 
 #boolean example TRUE and FALSE

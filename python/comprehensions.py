@@ -40,3 +40,15 @@ print(list2)
 list5=['user1@gmail.com','user2@yahoo.com','user3@microsoft.com']
 domains=[email.split('@')[1] for email in list5]
 print(domains)
+
+#write a program to print a list of strings in reverse
+name=['venu','sai','rajesh','mallareddy']
+em=[]
+rev=''
+for i in name:
+       
+                    rev=i+rev
+                    print(rev)
+
+        
+print(em)

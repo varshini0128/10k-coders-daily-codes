@@ -22,9 +22,9 @@ print("String after removing duplicates:", result)
 
 string = input("Enter a string: ")
 
-rev = ""      # make empty string for reverse
+rev = ""      
 for ch in string:
-    rev = ch + rev    # add each character in front
+    rev = ch + rev    
 
 if string == rev:
     print("Palindrome")
@@ -49,7 +49,7 @@ print("String after replacing vowels:", result)
 
 string = input("Enter a string: ")
 
-checked = []  # to store already counted characters
+checked = []  
 for ch in string:
     if ch not in checked:
         count = 0
@@ -57,7 +57,7 @@ for ch in string:
             if ch == c:
                 count += 1
         print(ch, ":", count)
-        checked.append(ch)  # mark as counted
+        checked.append(ch)  
 
 
 

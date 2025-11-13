@@ -4,202 +4,346 @@
 
 # primitive are immutable 
 # integer type  
-var2 = 2e3 # we defined a variable with a integer data type 
+var2 = 2e3 # we defined a variable with a float data type 
 print(var2)
+
+c=3e1 #printing float num without '.'  so we use 'e' and e=10**1/2/3/5/4...........
+c1=3E1 #we can use 'e' and 'E' 
+print(c1)
+print(c)
+print(type(c))
+
 
 #float 
 float1 = 3.3
 print(type(float1)) 
 
 #string example
+# string is a sequence of character enclosed in single quotes'',"",''' ''',once defined it cannot be changed 
+# features of string: 
+        # immutable, 
+        # ordered,
+        # iterable,
+        # supports for various methods like upper(),find(),replace()
+        #can be concatenated using + but can use * for string repeatation
 str4 = 'varsh'
 str5 = '22'
+print(str4 +' '+ str5)
+print(str4*2)
 str6 = '7.0'
 print(type(str4),type(str5),type(str6), str4.upper(), str5.lower()) #upper() & lower()  are used to convert a string to upper case and lower case
 
+#string methods :
+k='python'
+s=k.upper()
+print(s)
 
-#boolean example TRUE and FALSE
-print(1>5)
-print(8>5)
-varsh = 'hey varsh'
-print(varsh == "world")
+t='PYTHON developer'
+e=t.lower()
+print(e)
 
+s3=t.title()
+print(s3)
 
+s4=t.capitalize()
+print(s4)
 
-#Complex numbers: it is a combination of a real and imaginary number along with a constant
-# ex: a+bj where j = sqrt(-1)
-#we use complex numbers in polynomial functions and signal processing
+d = 'pYtHoN devLoPeR'
+res=d.swapcase()
+print(res)
 
-
-comp1 = 2+3j
-comp2 = 5+10j
-print(comp1) #printing complex number
-print(type(comp1))  #type of data
-print(comp1.real)  #to get the real part of my complex number
-print(comp1.imag)   #to get the imaginary part of my complex number
-
-#in addition and substraction the operation is performed on real part and imaginary part seperately
-print(comp1 + comp2)
-print(comp1 - comp2)
-
-# com1=a+bj
-# com2=c+dj
-# com1*com2 = (ac-bd)+(ad+bc)j
-# com1/com2 =(ac+bd)+(bc-ad)jc**2+d**2
-
-print(comp1*comp2)
-print(comp1/comp2)
-
-# magnitude = sqrt(a**2+b**2)      distance of a number from orgin in a plane
-print(abs(comp1))  #absolute function is used to find magnitude of a number
-print(abs(comp2)) #answer?? 
+h = "pythondeve@loper"
+w=h.replace('python','java')    #word replacing
+q=h.replace('p','a')    #char replacing
+print(w,q)
 
 
+d1=h.split()
+d=h.split("@")
+print(d,d1)
 
-#none type example
-none1 = None
-print(type(none1))
-print(None)
+f='python developer'
+print(f.startswith('p'))    #true
+print(f.startswith('P'))    #false python is case sensitive
+
+print(f.endswith('r'))     #true
+print(f.endswith('p'))     #false
+
+l='abc'
+s2=l.isalpha()          #true
+print(s2)
+
+k='234'
+d2=k.isalpha()      #false
+d3=k.isnumeric()        #true
+print(d2 ,d3)
+
+r = ' python'.lstrip()     #removing space using strip()->lstrip()-->leftside ,rstrip()-->rightside ,strip()->both sides
+print(len(r))
+
+i='python'
+b=list(i)   #["p","y","t","o","n"]
+e="".join(i)
+print("asdfghjkl;lkjhgfdsasdfghjkl;lkjhgfdsdfghjk")
+
+a='Python Developer'
+for x in a:
+    for char in x:
+        if char.isupper():
+            print(char)
+        # elif char.islower():
+        #     print(char)
+
+p=a.count('P')
+print(p)
+
+j=a.index('t')
+print(j)
 
 
-var3=10 
-var3+10
-print(var3)
+o='python'
+for x in o:
+    if x in 'aeiouAEIOU':
+        # print(x)
+        res+='*'
+    else:
+        res+=x
 
-#type() is used to know the type of a data
-print(type(5))
-print(type(None))
+#reverse using slicing
+h='pyth'
+h1=h[::-1]
+print(h1)
 
-# Task1 : Demonstrate primitive datatype 
-num1 = 2 
-float2= 2.2
-string = "varsh"
-boolvalue = 2<5
-nonevalue = None 
-print(num1, float2, string, boolvalue, nonevalue)
-print(type(num1))
-print(type(float1))
-print(type(string))
-print(type(boolvalue))
-print(type(nonevalue))
-
-# #non primitive datatypes Non primitive types are immutable except frozen set and tuple
+result1=''
+res2=''
+for x in h:
+    result1=x+result1   #backward/reverse concatenating
+    res2+=x             #forward concatenating 
+print(result1,res2)
 
 
-#list : It is used to store sequence of data using square brackets  list is mutable 
-#We can store data of multiple datatypes  in a list
+h = "AjayPython"
+g=''
+for x in h:
+    if x.isupper():
+        g+='_'
+        g+=x.lower()
+    elif x.islower():
+        g+=x
+print(g)
 
-list1= [1,3.3,"string", True, None, 3+6j]
-print(list1)
-# to add a value to an existing list, we use append()
-# list1.append("varsh")
+h='PyThOn'
+x1=''
+for x in h:
+    if x.isupper():
+        x1+=x.lower()
+    elif x.islower():
+        x1+=x.upper()
+print(x1)
+
+
+# # #count the num of char in a string
+# # name='varshini'
+# # count=0
+# # for x in name:
+# #     count+=1
+# # print(count)
+# # a=97
+# # print(chr(a))
+# # b='B'
+# # print(ord(b))
+
+
+# # #printing Alphabet
+# # for x in range(65,91):
+# #     print(chr(x))
+
+# #count the each char count
+# k='python'
+
+
+# #boolean example TRUE and FALSE
+# print(1>5)
+# print(8>5)
+# varsh = 'hey varsh'
+# print(varsh == "world")
+
+
+
+# #Complex numbers: it is a combination of a real and imaginary number along with a constant
+# # ex: a+bj where j = sqrt(-1)
+# #we use complex numbers in polynomial functions and signal processing
+
+
+# comp1 = 2+3j
+# comp2 = 5+10j
+# print(comp1) #printing complex number
+# print(type(comp1))  #type of data
+# print(comp1.real)  #to get the real part of my complex number
+# print(comp1.imag)   #to get the imaginary part of my complex number
+
+# #in addition and substraction the operation is performed on real part and imaginary part seperately
+# print(comp1 + comp2)
+# print(comp1 - comp2)
+
+# # com1=a+bj
+# # com2=c+dj
+# # com1*com2 = (ac-bd)+(ad+bc)j
+# # com1/com2 =(ac+bd)+(bc-ad)jc**2+d**2
+
+# print(comp1*comp2)
+# print(comp1/comp2)
+
+# # magnitude = sqrt(a**2+b**2)      distance of a number from orgin in a plane
+# print(abs(comp1))  #absolute function is used to find magnitude of a number
+# print(abs(comp2)) #answer?? 
+
+
+
+# #none type example
+# none1 = None
+# print(type(none1))
+# print(None)
+
+
+# var3=10 
+# var3+10
+# print(var3)
+
+# #type() is used to know the type of a data
+# print(type(5))
+# print(type(None))
+
+# # Task1 : Demonstrate primitive datatype 
+# num1 = 2 
+# float2= 2.2
+# string = "varsh"
+# boolvalue = 2<5
+# nonevalue = None 
+# print(num1, float2, string, boolvalue, nonevalue)
+# print(type(num1))
+# print(type(float1))
+# print(type(string))
+# print(type(boolvalue))
+# print(type(nonevalue))
+
+# # #non primitive datatypes Non primitive types are immutable except frozen set and tuple
+
+
+# #list : It is used to store sequence of data using square brackets  list is mutable 
+# #We can store data of multiple datatypes  in a list
+
+# list1= [1,3.3,"string", True, None, 3+6j]
 # print(list1)
+# # to add a value to an existing list, we use append()
+# # list1.append("varsh")
+# # print(list1)
 
-#indexing : it is used to access / modify individual values in a sequence 
-print(list1[0])
-list1[2] = "varsh"
-list1[1] = 7.0
-print(list1)
-# negative indexing : this is used to access individual values from back 
-list1[-2] = False
-print(list1)
-print(len(list1))  #len(): returns no of values in a sequence
-print(list1.count(3.3)) #count(): used to get the number of time a value is repeated
-print(list1.count("varsh")) #count(): used to get the number of time a value is repeated
-
-
- #tuples: in tuple we can provide data types and list also access the values using indexing .
- #  it looks similar to list but instead of square of braces we use open braces()
- # tupleName=(value1,value2,value3,,,,,,,)
- #tuples are immutable 
-#since tuple is immutable we cant perform append or other actions
-
-tuple = (22, 7.0, "varsh", None, 'sri indu', 123456543, [1,2,3,4,5], (6,7,8))
-print(tuple) 
-print(len(tuple))  #len(): returns no of values in a sequence 
-print(tuple.count('varsh')) #count(): used to get the number of time a value is repeated 
-print(tuple.count('vamshi')) #returns 0 if values are not in tuple or sequence
-print(tuple[-1][2]) #double indexing 
-print(tuple[-2][4])
-# tuple[1] = 8.0 #gives error as tuple is immutable
-
-#Task: Create a list with your name , college, cgpa, and later add your address to it using append 
-
-mydatalist = ["varshini", "Sri Indu", 7.0]
-print(mydatalist)
-mydatalist.append("Dilsukhnagar")
-print(mydatalist) 
-print(mydatalist.count(7.0))  #count(): used to get the number of time a value is repeated
-print(len(mydatalist))  #len(): returns no of values in a sequence
-print(mydatalist[0])  #indexing to access individual values in a sequence
-print(mydatalist[-1]) #negative indexing to access individual values from back in a sequence
-
-#set: set is used to store unique and unordered elements
-# set is mutable we can add, remove elements from it 
-
-set1 = {1,2,3,1,2,3,'hema','rahul','satya'}
-print(set1)
-# print(set1[0]) gets error cant use indexing in set because it is unordered
-
-set1.add(5)
-print(set1) # it adds value 5 randomly we cant define which place to add 5 
-set1.remove(3)
-print(set1)
-froset=frozenset([1,2,3,4,5,1,2,3,4,5])
-print(froset)
-
-# froset.add(9) gives error
-
-#dictionary: it is used to store data in the form of key-value pairs 
-# we can access values in dictionary using keys
-#all the keys of my dictionary of to be immutable data type
-#we can access only keys of a dictionary using .keys()  function
-#we can access only values of a dictionary using .values()  function
-#we can access both keys and values of a dictionary using .items()  function
-
-dict1 = {'name':'varsh', 'age': 22,'college': 'siiet','cgpa':7.0,'mobile no': 12345678}
-print(dict1['age'])
-print(dict1['cgpa'])# we get values as output 
-print(dict1.keys())
-print(dict1.values())
-print(dict1.items)
-
-dict2= {1:'varsh', 2:'sanjana', 3: 'varsha'}
-
-print(dict2)
-
-# dict3 = {[1,2,3]:'list',(1,2,3,4):'tuple',{1,2,34,22}: 'set'} we get errors because list and set are mutable and 
-# all the keys of my dictionary of to be immutable data type
-
-var2 = 2e3
-print(var2)
+# #indexing : it is used to access / modify individual values in a sequence 
+# print(list1[0])
+# list1[2] = "varsh"
+# list1[1] = 7.0
+# print(list1)
+# # negative indexing : this is used to access individual values from back 
+# list1[-2] = False
+# print(list1)
+# print(len(list1))  #len(): returns no of values in a sequence
+# print(list1.count(3.3)) #count(): used to get the number of time a value is repeated
+# print(list1.count("varsh")) #count(): used to get the number of time a value is repeated
 
 
-#type conversion : python automatically converts a type of a value during execution
-int3 = 4
-float3 = 2.3
-print(int3+float3)
+#  #tuples: in tuple we can provide data types and list also access the values using indexing .
+#  #  it looks similar to list but instead of square of braces we use open braces()
+#  # tupleName=(value1,value2,value3,,,,,,,)
+#  #tuples are immutable 
+# #since tuple is immutable we cant perform append or other actions
 
-#type casting : here we manually change the type of a datatype
-#in short it is done by the programmers instead of compiler
+# tuple = (22, 7.0, "varsh", None, 'sri indu', 123456543, [1,2,3,4,5], (6,7,8))
+# print(tuple) 
+# print(len(tuple))  #len(): returns no of values in a sequence 
+# print(tuple.count('varsh')) #count(): used to get the number of time a value is repeated 
+# print(tuple.count('vamshi')) #returns 0 if values are not in tuple or sequence
+# print(tuple[-1][2]) #double indexing 
+# print(tuple[-2][4])
+# # tuple[1] = 8.0 #gives error as tuple is immutable
 
-print(int(int3+float3))
+# #Task: Create a list with your name , college, cgpa, and later add your address to it using append 
 
-#creating a complex number using type casting
-a=3
-b=5
-print(complex(a,b))
+# mydatalist = ["varshini", "Sri Indu", 7.0]
+# print(mydatalist)
+# mydatalist.append("Dilsukhnagar")
+# print(mydatalist) 
+# print(mydatalist.count(7.0))  #count(): used to get the number of time a value is repeated
+# print(len(mydatalist))  #len(): returns no of values in a sequence
+# print(mydatalist[0])  #indexing to access individual values in a sequence
+# print(mydatalist[-1]) #negative indexing to access individual values from back in a sequence
+
+# #set: set is used to store unique and unordered elements
+# # set is mutable we can add, remove elements from it 
+
+# set1 = {1,2,3,1,2,3,'hema','rahul','satya'}
+# print(set1)
+# # print(set1[0]) gets error cant use indexing in set because it is unordered
+
+# set1.add(5)
+# print(set1) # it adds value 5 randomly we cant define which place to add 5 
+# set1.remove(3)
+# print(set1)
+# froset=frozenset([1,2,3,4,5,1,2,3,4,5])
+# print(froset)
+
+# # froset.add(9) gives error
+
+# #dictionary: it is used to store data in the form of key-value pairs 
+# # we can access values in dictionary using keys
+# #all the keys of my dictionary of to be immutable data type
+# #we can access only keys of a dictionary using .keys()  function
+# #we can access only values of a dictionary using .values()  function
+# #we can access both keys and values of a dictionary using .items()  function
+
+# dict1 = {'name':'varsh', 'age': 22,'college': 'siiet','cgpa':7.0,'mobile no': 12345678}
+# print(dict1['age'])
+# print(dict1['cgpa'])# we get values as output 
+# print(dict1.keys())
+# print(dict1.values())
+# print(dict1.items)
+
+# dict2= {1:'varsh', 2:'sanjana', 3: 'varsha'}
+
+# print(dict2)
+
+# # dict3 = {[1,2,3]:'list',(1,2,3,4):'tuple',{1,2,34,22}: 'set'} we get errors because list and set are mutable and 
+# # all the keys of my dictionary of to be immutable data type
+
+# var2 = 2e3
+# print(var2)
 
 
-bool2 = True #note in python true value is considered as 1 and  false as 0
-int4 = 4
-print(bool2+int4)
+# #type conversion : python automatically converts a type of a value during execution
+# int3 = 4
+# float3 = 2.3
+# print(int3+float3)
 
-v=6
-n=True
-print(v+n)
-str1 ="varshini"
-print(list(str1))
-print(set(str1))
+# #type casting : here we manually change the type of a datatype
+# #in short it is done by the programmers instead of compiler
+
+# print(int(int3+float3))
+
+# #creating a complex number using type casting
+# a=3
+# b=5
+# print(complex(a,b))
+
+
+# bool2 = True #note in python true value is considered as 1 and  false as 0
+# int4 = 4
+# print(bool2+int4)
+
+# v=6
+# n=True
+# print(v+n)
+# str1 ="varshini"
+# print(list(str1))
+# print(set(str1))
 
 

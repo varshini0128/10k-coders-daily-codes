@@ -75,3 +75,5 @@ for ch in string:
 print("Uppercase letters:", upper)
 print("Lowercase letters:", lower)
 
+
+h='ajay@!@#$%^&123456789'

@@ -1,0 +1,56 @@
+#d1{
+    background-color: black;
+    color:white;
+    font-size: 20px;
+}
+#id1{
+width: 100%;
+height:800px
+}
+.c1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+nav{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 0px;
+}
+.i2{
+    padding-left: 350px;
+    padding-right: 350px;
+    width:800px;
+    height:400px
+
+}
+#r3{
+    padding-left: 350px;
+    padding-right: 350px;
+}
+.bg{
+    background-color: black;
+    color: white;
+}
+b1{
+    background-color: black;
+    color: wheat;
+}
+.r3{
+    width:5000px;
+    height:30px;
+    padding-left: 350px;
+    padding-right: 350px;
+    
+}
+inp{
+    padding: 50px;
+    width:25000px;
+    height:30px;
+}

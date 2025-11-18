@@ -1,0 +1,8 @@
+ul li, h1{
+    background-color: chocolate;
+    list-style: none;
+}
+div>section,main{
+    color: brown;
+
+}

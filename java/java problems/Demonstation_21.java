@@ -1,6 +1,0 @@
-<html>
-<body>
-<applet code="Demonstration_21.class" width="300"height="300">
-</applet>
-</body>
-</html>

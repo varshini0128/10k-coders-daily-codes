@@ -18,6 +18,68 @@ for x in range(len(k)):
         k[x]+=10
 print(k)
 
+#update the odd index values by multipying them with 2
+k=[10,11,12,13,14,15,16,17]
+for x in range(len(k)):
+    if x % 2==1:
+        k[x]=k[x]*2
+print(k)   #op: [10, 22, 12, 26, 14, 30, 16, 34]
+
+#to find factors of a number:
+a=12
+for x in range(1,12):
+    if a%x==0:
+        i=print(x)
+
+
+
+#check prime or not 
+b=5
+count=0
+for x in range(1,b+1):
+    if a%x==0:
+        count+=1
+if count==2:
+    print('prime')
+else:
+    print("not prime")
+
+
+h=[10,11,12,13,14,15,16,17]
+for x in h:
+    cou=0
+    for y in range(1,x):
+        if x%y==0:
+            cou+=1
+    if cou==1:
+        print("prime",x)
+        x*=2
+        print(x)
+    else:
+        print("not prime")
+
+s=[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 1. Create a list of 5 numbers and print the first and last element.
 lst = [10, 20, 30, 40, 50]
@@ -77,7 +139,7 @@ print("Reversed list:", rev)
 # 6. Check if a list is empty or not.
 lst = []
 
-if len(lst) == 0:
+if len(lst) == 0: 
     print("List is empty")
 else:
     print("List is not empty")

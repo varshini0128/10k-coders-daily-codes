@@ -23,6 +23,9 @@ print(l)  #ordered op: 10,20,3e1,30,'python'
 # for x in 10,:  it gives 10 as output
 
 
+f=1,2,34,568,7654,22332,3,32,11,2,1
+p=sorted(f)
+print(p,'******************************************')
 
 #SET features
     # unordered
@@ -75,8 +78,8 @@ print(l)
 
 k1={10,20,30,40}
 k2={10,50,30,20}
-res4={k1.intersection(k2)}
-print(res4)
+rs=k1.intersection(k2)
+print(rs)
 res3=k1&k2      #& is intersection
 print(res3)
 
@@ -89,4 +92,10 @@ r1=k1.difference(k2)
 r2=k1-k2        # - is difference
 r3=k2-k1        # - is difference
 
+a={1,2,3}
+b={1,2,3,4,5}
+res5=a.issubset(b)
+res6=b.issuperset(a)
+rees7=a.isdisjoint(b)
+print(res5,res6,rees7)
 

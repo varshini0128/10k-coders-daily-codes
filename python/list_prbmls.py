@@ -1,3 +1,61 @@
+
+# #list : It is used to store sequence of data using square brackets  list is mutable 
+# #We can store data of multiple datatypes  in a list
+#features:
+        #ordered                     same order when we print
+        #mutable                     can be changed
+        #allow duplicates            
+        #hetergenous object          different datatypes can be stored
+        #supports nested lists
+        #builtin methods'iterable
+        #indexable and slicable
+
+list1= [1,3.3,"string", True, None, 3+6j]
+print(list1)
+
+#LIST METHODS
+    #APPEND
+            # to add a value to an existing list, we use append()
+            # list1.append("varsh")
+            # print(list1)
+    #REMOVE
+            # it is used to remove specific element from list 
+            # list1.remove(1)
+    #POP
+            #it is used to remove last value or particular indexed value in a list
+            #list1.pop()
+            # list1.pop(1) here 1 is index 
+            # list1.pop(21) #indexerror
+            # h=list1.pop(2) to show or display the popped value
+    #INSERT
+            #it is used to insert a value at a certain index 
+            # list1.insert(1,200)       first we need to pass index position and then value in  inside method
+    #EXTEND
+            #it is used to add more than one values at a time then we use extend
+            #list1.extend(10,22,33)
+        #merge:     a=[12,23,3,4,5,6,4]
+                    # b=[1234,2345345,78765345,765]
+                    # merge=a+b
+        #repeat:    # repeat=a*2
+
+
+# #indexing : it is used to access / modify individual values in a sequence 
+# print(list1[0])
+# list1[2] = "varsh"
+# list1[1] = 7.0
+# print(list1)
+# # negative indexing : this is used to access individual values from back 
+# list1[-2] = False
+# print(list1)
+# print(len(list1))  #len(): returns no of values in a sequence
+# print(list1.count(3.3)) #count(): used to get the number of time a value is repeated
+# print(list1.count("varsh")) #count(): used to get the number of time a value is repeated
+
+h=[1,2,3,4]
+h+=[9]      #without append
+print(h)
+print("****************************************************************************")
+
 k=[10,20,'python','java',3.3,22,43]
 for x in k :
     if type(x)==int or float:
@@ -59,11 +117,6 @@ for x in h:
         print("not prime")
 
 s=[]
-
-
-
-
-
 
 
 

@@ -1,3 +1,8 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
 #d1{
     background-color: black;
     color:white;
@@ -11,7 +16,6 @@ height:800px
     background-color: black;
     color: white;
     text-align: center;
-    
 }
 nav{
     margin-top: 0px;
@@ -51,8 +55,8 @@ b1{
     padding-right: 350px;
     
 }
-inp{
-    padding: 50px;
-    width:25000px;
-    height:30px;
+.inp{
+   height: 30px;
+    width:300px;
+    font-size: 10px;
 }

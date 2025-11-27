@@ -1,0 +1,16 @@
+body{
+    border: 2px salmon;
+}
+h1{
+    border: 5px solid; 
+    padding: 20px; 
+    width: 100px; 
+    padding-left: 50px;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 10%;
+    /* margin-left: 20-x; */
+
+}
+/* 1%=16px */

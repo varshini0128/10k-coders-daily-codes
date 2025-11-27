@@ -1,0 +1,26 @@
+/* text properties */
+/* text properties are used to change the style of the text */
+
+/* color: it is used to change the style of the text        default value is black*/
+/* text-align: default value is left
+text-decoration: values are underline, line-through, overline 
+text-decoration-  */
+
+.h1{
+    color:blue;
+    text-align:center;
+    text-decoration-line: underline;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 10px;
+    text-decoration-style: dotted;
+    font-size:30px;
+    text-shadow: 15px,15px,5px,red;
+    line-height: 30px;
+    word-spacing: 5px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    
+}

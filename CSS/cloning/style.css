@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border-color: black;
+}
+body{
+     margin-top: 0px;
+     margin-left: 0px;
+     padding: 0px 0px;
+     margin: 0%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    border: 2px solid;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width:100%;
+    position: fixed;
+
+}
+.p5{
+    margin-left: 250px;
+     margin-top: -18px;
+}
+.p4{
+    margin-left: 170px;
+     margin-top: -18px;
+}
+.p3{
+    margin-left: 120px ;
+    margin-top: -18px;
+}
+.p2{
+    margin-left: 60px;
+    margin-top: -18px;
+}
+.p1{
+    margin-top:10px;
+}
+.s{
+    border: 2px solid black;
+    height: 400px;
+    background-image: url("https://www.w3schools.com/w3images/la.jpg");
+    width:100%;
+    color: white;
+    text-align:center;
+    padding-left: 1000px;
+
+
+}
+
+section h1{
+    margin-left: 700;
+
+}
+section p{
+    margin-left: 60px;
+    font-size: 25px;
+
+}
+.k{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    padding-left: 100px;
+    text-align: justify;
+    padding-right: 100px;
+    font-size:medium;
+}
+.h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+}
+.img1{
+    padding-top: 10px;
+    padding-left: 180px;
+    
+   
+}
+.img3{
+     padding-right: 100px;
+}
+.img2{
+     padding-right: 30px;
+      padding-left: 30px;
+}
+pre{
+    padding-top: 70px;
+    padding-left: 200px;
+    font-size: large;
+}
+
+.c3{
+    background-color: black;
+    height: 700px;
+    color: white;
+
+}
+.i4{
+    padding-top: 70px;
+    padding-left: 100px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px; 
+
+}
+button{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.i8{
+     /* padding-top: 70px;
+    padding-left: 70px;  */
+    display: block;
+    padding-right: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px; 
+
+}

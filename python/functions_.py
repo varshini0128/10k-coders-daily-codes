@@ -121,3 +121,14 @@ def details(name,pin):
 details('ajay','322')
 
 
+def fun(a,*b,c='hi',d=20000):
+    print(a)
+    print(d)
+fun(2,222,333,22123,325)
+
+def d(**a):
+    for k, v in a.items():
+    
+        print(k,'====',v)
+
+d(name='kumar',id='101',age=15)

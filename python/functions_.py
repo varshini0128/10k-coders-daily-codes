@@ -64,14 +64,60 @@ check_num(23)
 l1=10
 l2=14
 l3=13
-# m=1
-cou1=0
-def prime(m):
-    for x in range(2,m):        #1,2,5
-        if m%x==0:
-            cou1+=1
-    if cou1==1:
-        print('prime')
-    else:
-        print('not prime')
-prime(11)
+# # m=1
+# cou1=0
+# def prime(m):
+#     for x in range(2,m):        #1,2,5
+#         if m%x==0:
+#             cou1+=1
+#     if cou1==1:
+#         print('prime')
+#     else:
+#         print('not prime')
+# prime(11)
+
+
+#factorial
+def fact(a):
+    mul=1
+    for x in range(1,a+1):
+        mul*=x
+    print(mul)
+fact(7)
+
+#calculator
+# a=10
+# b=20
+def cal():
+        a=int(input('enter first number: '))
+        b=int(input('enter second number: '))
+        n=input('enter operations + - * / :')
+        if n=='+':
+            print('a+b=',a+b)
+        elif n=='-':
+            print('a-b=' ,a-b)
+        elif n=='*':
+            print('a*b=',a*b)
+        elif n=='/':
+            if b>0:
+                print('a/b=',a/b)
+            else:
+                print('zero division errror')
+cal()
+
+def first(name):
+    print('this is first function',name)
+
+def second(j):
+    print('this is second function')
+    first(j)
+
+second('ajay')
+
+def details(name,pin):
+    print('name:',name)
+    print('pin',pin)
+
+details('ajay','322')
+
+

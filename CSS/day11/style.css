@@ -1,0 +1,215 @@
+.div1{
+    text-align: center;
+    border-right: 1px solid;
+    font-size: 20px;
+    border-color:  lightgrey;
+    padding-right: 15px;   
+    color: gray;  
+}
+.div4{
+    font-size: 20px;
+     color: gray;  
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     color: gray;  
+}
+.sec1{
+     /* border: 1px solid; */
+     border-color:  lightgrey;
+     width: fit-content;
+     text-align: center;
+     margin-left: 570px;
+     padding: 15px;
+
+}
+.p1{
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center;
+}
+#id1{
+    /* border: 1px solid; */
+    height: 460px;
+    width: 720px;
+    margin-bottom: 12px;
+    background-image: url("https://www.w3schools.com/w3images/wedding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    position: relative;
+}
+#id2{
+    /* border: 2px solid; */
+    height: 750px;
+    width: 720px;
+    margin-bottom: 12px;
+    background-image: url("https://www.w3schools.com/w3images/underwater.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-left: 810px; */
+    margin-top: 2px;
+    position: absolute;
+    top: 64%;
+    right: 1%;
+    /* margin-left: 0px; */
+}
+#id3{
+    /* border: 1px solid; */
+    height: 1300px;
+    width: 720px;
+    margin-bottom: 12px;
+    background-image: url("https://www.w3schools.com/w3images/rocks.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+    position: absolute;
+    top: 130%;
+
+}
+#id4{
+    /* border: 1px solid; */
+    height: 450px;
+    width: 720px;
+    margin-bottom: 12px;
+    margin-left: 800px;
+    background-image: url("https://www.w3schools.com/w3images/ocean.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 7px;
+    margin-top: 5%;
+    position: absolute;
+    left: 51%;
+    top: 160%;
+}
+
+#id5{
+    /* border: 1px solid; */
+    height: 350px;
+    width: 720px;
+    margin-bottom: 12px;
+    background-image: url("https://www.w3schools.com/w3images/wedding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 7px;
+    
+    position: absolute;
+    left: 51%;
+    top: 235%;
+}
+#id6{
+    background-image: url("https://www.w3schools.com/w3images/falls2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid; */
+    height: 350px;
+    width: 720px;
+    margin-bottom: 12px;
+    position: absolute;
+    top:310%;
+    margin-left: 18px;
+}
+
+#id7{
+    background-image: url("https://www.w3schools.com/w3images/mountainskies.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 1px solid; */
+    height: 350px;
+    width: 720px;
+     margin-bottom: 12px;
+    position: absolute;
+    top:286%;
+    margin-left: 774px;
+}
+#id8{
+   background-image:  url("https://www.w3schools.com/w3images/paris.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* border: 1px solid; */
+   height: 500px;
+   width: 720px;
+   margin-bottom: 12px;
+   position: absolute;
+   top:360%;
+   margin-left: 18px;
+}
+#id9{
+    background-image: url("https://www.w3schools.com/w3images/rocks.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   /* border: 1px solid; */
+   height: 1400px;
+   width: 720px;
+   margin-bottom: 12px;
+   position: absolute;
+   top:338%;
+   left: 50%;
+   margin-left: 22px;
+    
+}
+#id10{
+   background-image: url("https://www.w3schools.com/w3images/nature.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* border: 1px solid; */
+   height: 400px;
+   width: 720px;
+   margin-bottom: 12px;
+   position: absolute;
+   top:430%;
+   /* left: 50%; */
+   margin-left: 18px;
+
+}
+#id11{
+    background-image: url("https://www.w3schools.com/w3images/mist.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   /* border: 1px solid; */
+   height: 200px;
+   width: 720px;
+   margin-bottom: 12px;
+   position: absolute;
+   top:486%;
+   /* left: 50%; */
+   margin-left: 18px;
+}
+
+#id12{
+   background-image:  url("https://www.w3schools.com/w3images/paris.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* border: 1px solid; */
+   height: 500px;
+   width: 720px;
+   margin-bottom: 12px;
+   position: absolute;
+   top:515%;
+   margin-left: 18px;
+}
+#id13{
+    background-image: url("https://www.w3schools.com/w3images/underwater.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   /* border: 1px solid; */
+   height: 450px;
+   width: 720px;
+   margin-bottom: 12px;
+   position: absolute;
+   top:530%;
+   left: 50%;
+   margin-left: 22px;
+    
+}
+footer{
+    text-align: center;
+    padding: 70px;
+    height: 100px;
+    background-color: lightgray;
+    position: absolute;
+    top: 600%;
+    width: 1400px;
+    margin: 0%;
+   
+}

@@ -1,0 +1,47 @@
+/* FLEX-BOX: It is used to make the webpage responsiveness
+            It moves the elements in the columns or rows 
+            It is 1D layout
+
+*/
+/* flex-container properties (parent properties)*/
+/* display:flex; */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+nav{
+    border: 2px solid;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction:row-reverse;   we have row , column row reverse and column reverse */ 
+    flex-wrap: wrap;
+    justify-content: center ; 
+    justify-content: space-around;
+    /* we have start, end, center, flex-end, space between, space evenly, space around values for justify-content */
+    align-items: start;
+    /* we have start center end flex-end values for align items */
+    /* gap: 30px;  it is not responsive */
+}
+nav p{
+    border: 2px solid;
+    width: 100px;
+}
+.span1
+{
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+    /* span is inline level element so it does not accept height and width  */
+    display: inline-block;
+    display: block;
+    display: none;
+    display: block;
+}
+.span2{
+    border: 2px solid;
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+}

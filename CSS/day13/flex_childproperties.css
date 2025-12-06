@@ -28,6 +28,7 @@ div p{
 }
 .p4{
     /* order: 0; */
+    flex-shrink: 1;
     /* flex-grow: 9; */
 }
 

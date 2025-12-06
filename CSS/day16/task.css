@@ -1,0 +1,68 @@
+*{
+    padding:0%;
+    box-sizing: 0%;
+    margin: 0%;
+}
+div{
+    display: grid;
+    border: 5px solid black;
+    height: 1500px;
+    /* grid-template-columns: 'header sec1 sec2 footer'; */
+
+}
+header{
+    height: 80px;
+    padding-bottom: 0px;
+    border: 1px solid ;
+    display: grid;
+    grid-template-rows: "p icon1 icon2";
+ 
+   
+}
+header p{
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    display: inline-block;
+   
+}
+.icon1{
+    grid-area: icon1;
+    grid-column-start: 14;
+    grid-column-end:14;
+}
+.icon2{
+    justify-items: end;
+    grid-area: icon2;
+    grid-column-start: 15;
+    grid-column-end:15;
+    
+}
+.p1{
+    grid-area: p;
+    grid-column-start:1;
+    grid-column-end: 14;
+}
+.sec1{
+    background-image: url("https://www.w3schools.com/w3images/jeans.jpg");
+    background-size: cover;
+    background-position: fixed;
+    height: 800px;
+    margin-top: 10px; 
+}
+
+.sec1 h1,h3 {
+    background-color: rgb(255, 255, 255, 0.5);
+    margin-left: 100px;
+    width: fit-content;
+    font-size: xx-large;
+    margin-top: 50px;
+}
+button{
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+
+}

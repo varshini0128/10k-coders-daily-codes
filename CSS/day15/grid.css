@@ -1,0 +1,62 @@
+/* grid: it is a two dimensional  */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+div{
+    border: 2px solid;
+    padding: 30px;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    /* grid-template-rows: 200px 200px 200px; */
+    /* grid-row-gap: 20px;  it is depricated  */
+    row-gap: 30px;
+    column-gap: 30px;
+    height: 800px;
+    justify-content: center;  
+    /* theres a shorthand prop for justify content and align content it is place-content */
+   /* place-content: align-content justify-content; */
+    align-content:center ;
+    place-content: center end; 
+    justify-items: center;
+    align-items: center;
+    /* theres a shorthand prop for justify items and align items it is place-items */
+   /* place-items: align-items justify-items; */
+    place-items: center end;
+}
+p{
+    border: 2px solid;
+    /* height:50px; */
+}
+.p1{
+    background-color: aquamarine;
+}
+.p2{
+    background-color: blueviolet;
+}
+.p3{
+    background-color: burlywood;
+}
+.p4{
+    background-color:darkolivegreen ;
+
+}
+.p5{
+    background-color: tomato;
+
+}
+.p6{
+    background-color: cornflowerblue;
+}
+.p7{
+    background-color: rgb(193, 70, 148);
+}
+.p8{
+    background-color: rgb(106, 106, 106);
+}
+.p9{
+    background-color: rgb(241, 155, 42);
+}

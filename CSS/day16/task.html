@@ -3,28 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeans Collection</title>
     <link rel="stylesheet" href="./task.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div>
-        <header>
-            <p class="p1">Jeans</p>
-            <p class="icon1"><i class="fa-solid fa-cart-shopping"></i></p>
-            <p class="icon2"><i class="fa-solid fa-magnifying-glass"></i></p>
-        </header>
-        <section class="sec1">
+
+    <header class="navbar">
+        <div class="nav-title">Jeans</div>
+        <div class="nav-icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <img src="https://www.w3schools.com/w3images/jeans.jpg" alt="Man sitting in the desert wearing jeans and a cardigan, holding a hat.">
+        <div class="hero-text-overlay">
             <h1>New arrivals</h1>
-            <h3>COLLECTION 2016</h3>
-            <button style="background-color: black; color: white;">SHOP NOW</button>
-        </section>
-        <section class="sec2">
-
-        </section>
-        <footer>
-
-        </footer>
+            <p class="collection-year">COLLECTION 2016</p>
+            <button class="shop-now-btn">SHOP NOW</button>
+        </div>
     </div>
+    
+    <div class="main-content-wrapper">
+        <p class="item-count-indicator">8 items</p>
+
+        <div class="product-grid">
+            
+            <div class="product-item">
+                <img src="https://www.w3schools.com/w3images/jeans1.jpg" alt="Legs in ripped skinny jeans and white shoes">
+                <h3>Ripped Skinny Jeans</h3>
+                <p class="price">$24.99</p>
+            </div>
+
+            <div class="product-item">
+                <span class="badge new-badge">New</span>
+                <img src="https://www.w3schools.com/w3images/jeans2.jpg" alt="Man's legs in heavily ripped jeans">
+                <h3>Mega Ripped Jeans</h3>
+                <p class="price">$19.99</p>
+            </div>
+
+            <div class="product-item">
+                <img src="https://www.w3schools.com/w3images/jeans1.jpg" alt="Woman sitting on a wooden fence wearing washed skinny jeans and boots">
+                <h3>Washed Skinny Jeans</h3>
+                <p class="price">$20.50</p>
+            </div>
+
+            <div class="product-item">
+                <img src="https://www.w3schools.com/w3images/jeans2.jpg" alt="Woman standing in light wash vintage skinny jeans">
+                <h3>Vintage Skinny Jeans</h3>
+                <p class="price">$14.99</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="https://www.w3schools.com/w3images/jeans1.jpg" alt="Man's legs in heavily ripped jeans">
+                <h3>Mega Ripped Jeans</h3>
+                <p class="price">$19.99</p>
+            </div>
+
+            <div class="product-item">
+                <img src="https://www.w3schools.com/w3images/jeans2.jpg" alt="Woman sitting on a wooden fence wearing washed skinny jeans and boots">
+                <h3>Washed Skinny Jeans</h3>
+                <p class="price">$20.50</p>
+            </div>
+
+            <div class="product-item">
+                <span class="badge sale-badge">Sale</span>
+                <img src="https://www.w3schools.com/w3images/jeans1.jpg" alt="Woman standing in light wash vintage skinny jeans">
+                <h3>Vintage Skinny Jeans</h3>
+                <p class="price">$14.99</p>
+            </div>
+            
+            <div class="product-item">
+                <img src="https://www.w3schools.com/w3images/jeans2.jpg" alt="Legs in ripped skinny jeans and white shoes">
+                <h3>Ripped Skinny Jeans</h3>
+                <p class="price">$24.99</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="subscribe-section">
+        <div class="subscribe-content">
+            <h2>Subscribe</h2>
+            <p>To get special offers and VIP treatment:</p>
+            <input type="email" placeholder="Enter e-mail" class="subscribe-input">
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+    </div>
+
 </body>
 </html>

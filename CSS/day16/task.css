@@ -1,68 +1,246 @@
-*{
-    padding:0%;
-    box-sizing: 0%;
-    margin: 0%;
+/* --- Global Styles and Variables --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1; /* Light gray body background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.5;
 }
-div{
-    display: grid;
-    border: 5px solid black;
-    height: 1500px;
-    /* grid-template-columns: 'header sec1 sec2 footer'; */
 
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-red: #f44336; /* Subscribe button color */
+    --color-text-dark: #333;
+    --color-text-light: #f1f1f1;
 }
-header{
-    height: 80px;
-    padding-bottom: 0px;
-    border: 1px solid ;
+
+/* --- 1. Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--color-white);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.nav-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-icons i {
+    font-size: 1.1em;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* --- 2. Hero Banner --- */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* For readability against the image */
+}
+
+.hero-text-overlay h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.collection-year {
+    font-size: 1.5em;
+    margin: 5px 0 20px 0;
+    font-weight: 300;
+}
+
+.shop-now-btn {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+    background-color: #555;
+}
+
+/* --- Content Wrapper and Item Count --- */
+.main-content-wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.item-count-indicator {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+/* --- 3. Product Grid --- */
+.product-grid {
     display: grid;
-    grid-template-rows: "p icon1 icon2";
- 
-   
+    /* 4 columns on large screens */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin-bottom: 50px;
 }
-header p{
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    font-size: 30px;
-    display: inline-block;
-   
+
+.product-item {
+    background-color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
-.icon1{
-    grid-area: icon1;
-    grid-column-start: 14;
-    grid-column-end:14;
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
-.icon2{
-    justify-items: end;
-    grid-area: icon2;
-    grid-column-start: 15;
-    grid-column-end:15;
+
+.product-item h3 {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 10px 0 5px 0;
+    padding: 0 10px;
+}
+
+.product-item .price {
+    font-size: 0.9em;
+    color: var(--color-text-dark);
+    margin-bottom: 15px;
+}
+
+/* Badges (New/Sale) */
+.badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-white);
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.new-badge {
+    background-color: var(--color-black);
+}
+
+.sale-badge {
+    background-color: var(--color-red);
+}
+
+
+/* --- 4. Subscribe Section --- */
+.subscribe-section {
+    background-color: var(--color-black);
+    padding: 50px 0;
+}
+
+.subscribe-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: var(--color-white);
+}
+
+.subscribe-content h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.subscribe-content p {
+    font-size: 1em;
+    margin-bottom: 25px;
+    color: var(--color-text-light);
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.subscribe-btn {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px; /* Set a specific width for the button */
+}
+
+.subscribe-btn:hover {
+    background-color: #c9352b;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1100px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller desktops */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet/mobile */
+    }
     
-}
-.p1{
-    grid-area: p;
-    grid-column-start:1;
-    grid-column-end: 14;
-}
-.sec1{
-    background-image: url("https://www.w3schools.com/w3images/jeans.jpg");
-    background-size: cover;
-    background-position: fixed;
-    height: 800px;
-    margin-top: 10px; 
+    .hero-text-overlay h1 {
+        font-size: 2.5em;
+    }
+    .collection-year {
+        font-size: 1.2em;
+    }
 }
 
-.sec1 h1,h3 {
-    background-color: rgb(255, 255, 255, 0.5);
-    margin-left: 100px;
-    width: fit-content;
-    font-size: xx-large;
-    margin-top: 50px;
-}
-button{
-    margin-left: 100px;
-    margin-top: 20px;
-    height: 50px;
-    width: 100px;
-
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 column on small mobile devices */
+    }
+    .hero-text-overlay h1 {
+        font-size: 2em;
+    }
+    .collection-year {
+        font-size: 1em;
+    }
+    .shop-now-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
 }

@@ -3,10 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+
+    <div class="portfolio-container">
+        <header class="portfolio-header">
+            <h1>My Portfolio</h1>
+            <div class="filter-controls">
+                <span>Filter:</span>
+                <button class="filter-btn active">ALL</button>
+                <button class="filter-btn"><i class="fas fa-gem"></i> Design</button>
+                <button class="filter-btn"><i class="fas fa-camera"></i> Photos</button>
+                <button class="filter-btn"><i class="fas fa-palette"></i> Art</button>
+            </div>
+        </header>
+        
+        <div class="portfolio-grid">
+            
+            <div class="portfolio-item">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="A mountain road next to a lake">
+                <div class="item-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Northern lights over snowy mountains">
+                <div class="item-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Foggy forest on a rocky hillside">
+                <div class="item-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Foggy mountains covered in evergreen trees">
+                <div class="item-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="A close-up of coffee beans on a wooden surface">
+                <div class="item-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="A close-up portrait of a brown bear">
+                <div class="item-content">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="imgs">
+        <img src="https://www.w3schools.com/w3images/avatar_g.jpg" alt="">
+        <img src="https://www.w3schools.com/w3images/me2.jpg" alt="">
+    </section>
+    <div class="section-container about-section">
+    <h2>About Me</h2>
+    <p class="about-text">
+        Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+    </p>
+
+    <h3>Technical Skills</h3>
+
+    <div class="skills-bar-container">
+        <h4>Photography</h4>
+        <div class="bar-background">
+            <div class="bar-foreground" style="width: 95%;">
+                <span>95%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-bar-container">
+        <h4>Web Design</h4>
+        <div class="bar-background">
+            <div class="bar-foreground" style="width: 85%;">
+                <span>85%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-bar-container">
+        <h4>Photoshop</h4>
+        <div class="bar-background">
+            <div class="bar-foreground" style="width: 80%;">
+                <span>80%</span>
+            </div>
+        </div>
+    </div>
+
+    <button class="download-btn">
+        <i class="fas fa-download"></i> Download Resume
+    </button>
+</div>
+
+
+<div class="section-container pricing-section">
+    <h2>How much I charge</h2>
+    <div class="pricing-grid">
+
+        <div class="pricing-column basic">
+            <div class="pricing-header black-bg">
+                <h3>Basic</h3>
+            </div>
+            <ul class="features-list">
+                <li>Web Design</li>
+                <li>Photography</li>
+                <li>1GB Storage</li>
+                <li>Mail Support</li>
+            </ul>
+            <div class="price-box">
+                <span class="price">$10</span>
+                <span class="per-month">per month</span>
+            </div>
+            <button class="signup-btn basic-btn">Sign Up</button>
+        </div>
+
+        <div class="pricing-column pro">
+            <div class="pricing-header teal-bg">
+                <h3>Pro</h3>
+            </div>
+            <ul class="features-list">
+                <li>Web Design</li>
+                <li>Photography</li>
+                <li>50GB Storage</li>
+                <li>Endless Support</li>
+            </ul>
+            <div class="price-box">
+                <span class="price">$25</span>
+                <span class="per-month">per month</span>
+            </div>
+            <button class="signup-btn pro-btn">Sign Up</button>
+        </div>
+
+        <div class="pricing-column premium">
+            <div class="pricing-header gray-bg">
+                <h3>Premium</h3>
+            </div>
+            <ul class="features-list">
+                <li>Web Design</li>
+                <li>Photography</li>
+                <li>Unlimited Storage</li>
+                <li>Endless Support</li>
+            </ul>
+            <div class="price-box">
+                <span class="price">$25</span>
+                <span class="per-month">per month</span>
+            </div>
+            <button class="signup-btn premium-btn">Sign Up</button>
+        </div>
+
+    </div>
+</div>
+<div class="contact-section-full-width">
+    <div class="section-container contact-section" style="margin: 0 auto; padding-top: 60px; padding-bottom: 60px;"> 
+        
+        <h2>Contact Me</h2>
+
+        <div class="contact-info-bar">
+            <div class="contact-info-item gray-bg-dark">
+                <i class="fas fa-envelope"></i>
+                <p>email@email.com</p>
+            </div>
+            <div class="contact-info-item teal-bg-dark">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Chicago, US</p>
+            </div>
+            <div class="contact-info-item gray-bg-dark">
+                <i class="fas fa-phone"></i>
+                <p>512312311</p>
+            </div>
+        </div>
+
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+
+            <button type="submit" class="send-message-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+
+    </div> 
+</div>
+  <footer class="site-footer">
+    <div class="footer-content">
+        
+        <div class="footer-column">
+            <h3>FOOTER</h3>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p class="powered-by">Powered by <a href="#" target="_blank">w3.css</a></p>
+        </div>
+
+        <div class="footer-column blog-posts-column">
+            <h3>BLOG POSTS</h3>
+            
+            <div class="blog-item">
+                <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Person working on laptop">
+                <div>
+                    <h4>Lorem</h4>
+                    <p>Sed mattis nunc</p>
+                </div>
+            </div>
+            
+            <hr class="footer-hr">
+            
+            <div class="blog-item">
+                <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Cable car moving up a mountain">
+                <div>
+                    <h4>Ipsum</h4>
+                    <p>Praes tinci sed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-column popular-tags-column">
+            <h3>POPULAR TAGS</h3>
+            <div class="tag-cloud">
+                <span class="tag-item tag-highlight">Travel</span>
+                <span class="tag-item">New York</span>
+                <span class="tag-item">London</span>
+                <span class="tag-item">IKEA</span>
+                <span class="tag-item">NORWAY</span>
+                <span class="tag-item">DIY</span>
+                <span class="tag-item">Ideas</span>
+                <span class="tag-item">Baby</span>
+                <span class="tag-item">Family</span>
+                <span class="tag-item">News</span>
+                <span class="tag-item">Clothing</span>
+                <span class="tag-item">Shopping</span>
+                <span class="tag-item">Sports</span>
+                <span class="tag-item">Games</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        Powered by <a href="#" target="_blank">w3.css</a>
+    </div>
+</footer>
 </body>
 </html>

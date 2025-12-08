@@ -1,0 +1,50 @@
+div{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    
+}
+div:hover{
+    background-color: rgb(203, 154, 249);
+    /* transform: translateX(200px);
+    transform: translateY(300px); */
+    transform: translate(600px,200px) scale(1);;
+    transition-duration: 5s;
+    transform: rotate(180000deg);
+    /* transform: rotateX(180deg);
+    transform: rotateY(180deg); */
+    /* transform: skew(180deg);
+    transform: skewX(180deg);
+    transform: skewY(180deg); */
+    /* 1 in scale equal to 100% used to zoom in */
+    /* transform: scale(1); */
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+section{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+}
+section:hover{
+    background-color: rgb(53, 155, 180);
+    transform: translate(400px);
+    border-radius: 50%;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+}
+article{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+}
+article:hover{
+    background-color: violet ;
+    transform: translate(400px) rotate(180deg);
+    transition-duration: 5s;
+    transform: linear;
+    border-radius: 50%;
+    background-image: conic-gradient(yellow,pink,rgb(138, 138, 242));
+    transition-timing-function: ease-out;
+ 
+}

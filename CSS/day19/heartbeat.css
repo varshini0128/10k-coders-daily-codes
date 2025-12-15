@@ -1,0 +1,32 @@
+.div1{
+    border: 2px solid;
+    margin: auto;
+    height: 300px;
+    overflow: hidden;
+    width: 300px;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+img{
+    height: 300px;
+    width: 300px;
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-play-state: paused;
+}
+@keyframes heartbeat {
+    from{
+        transform: scale(0.8);
+        opacity: 0.2;
+    }
+    to{
+        transition: scale(1.8);
+        opacity: 1;
+    }
+}

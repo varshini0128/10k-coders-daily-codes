@@ -695,7 +695,7 @@ for k in d:
     if val not in new.values():
         new[k] = val
 
-print(new)
+print(new,"============================")
 
 # 52. Check if two dictionaries are equal
 d1 = {"a": 1, "b": 2}
@@ -811,7 +811,7 @@ for i in range(1, rows+1):
 # 22
 # 333
 # 4444
-# 5555
+# 55555
 
 rows = 5
 for i in range(1, rows + 1):
@@ -964,16 +964,20 @@ print(c.value)
 
 # 74. Simple calculator using class methods
 class Calculator:
-    def add(self, a, b):
+    @classmethod
+    def add(cls, a, b):
         return a + b
 
-    def sub(self, a, b):
+    @classmethod
+    def sub(cls, a, b):
         return a - b
 
-    def mul(self, a, b):
+    @classmethod
+    def mul(cls, a, b):
         return a * b
 
-    def div(self, a, b):
+    @classmethod
+    def div(cls, a, b):
         return a / b
 
 cal = Calculator()

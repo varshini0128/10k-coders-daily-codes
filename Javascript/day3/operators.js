@@ -101,4 +101,28 @@
 
                 // 9) && ampersand
 
-                
+//3 logical operators:
+                        // 1) && and operator : used to check multiple conditions 
+                        console.log(a>b && b>c);
+                        // true&&false==>false
+                        // false&&false==>false
+                        // true&&true==>true
+
+
+                        // 2) or || : returns true if one condition is true
+                        // console.log(true||false);true
+                        // console.log(false||false);==>false
+                        console.log(true||true);true
+
+                        // 3)not !:prints opp values
+                        console.log(!(true));
+                        p=90
+                        t=89
+                        console.log(!(p>t));
+                        console.log(!(p<t));
+                        
+                        
+                        
+                        
+
+                        

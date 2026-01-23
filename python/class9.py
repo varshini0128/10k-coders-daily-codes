@@ -42,7 +42,7 @@ class BANK:
         Deposit_Amount = int(input('enter deposit amount: '))
 
         for x in BANK.holder_details:
-            if x['Acc_num'] == self.Acc_num:
+            if x['Acc_num'] == acc_no:
                 x['balance']+=Deposit_Amount
 
     def withdraw(self):
@@ -75,7 +75,18 @@ class BANK:
                 for k,v in x.items():
                     print(k,v)  
             else:
-                print('check your acc number')    
+                print('check your acc number') 
+
+    def check_balance(self):
+        print("welcome to check balance")   
+        b1=int(input('enter acc  number: '))
+        print()
+        print('*****balance*****')
+        for x in BANK.holder_details:
+            if x['Acc_num']==b1:
+                print('your balance:',x['balance'])
+            else:
+                print('check your account number')
 obj =BANK()
 
 while True:
@@ -84,7 +95,8 @@ while True:
           2) Deposit
           3)check details
           4)withdraw
-          5)exit
+          5)check balance
+          6)exit
           """)
     n4=input('enter option:')
     if n4=='1':
@@ -96,4 +108,6 @@ while True:
     elif n4=='4':
         obj.withdraw()
     elif n4=='5':
+        obj.check_balance()
+    elif n4=='6':
         break

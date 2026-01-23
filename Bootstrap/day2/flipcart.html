@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone - Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body { background-color: #f1f2f4; }
+        .navbar { background-color: #fff; padding: 10px 0; }
+        .search-input { background-color: #f0f5ff; border: none; width: 500px !important; }
+        .category-bar { background-color: #fff; padding: 15px 0; border-bottom: 1px solid #e0e0e0; }
+        .category-item { text-align: center; font-size: 14px; font-weight: 500; cursor: pointer; color: #333; }
+        .category-item img { width: 64px; height: 64px; margin-bottom: 5px; }
+    
+        .carousel-item img { height: 280px; object-fit: cover; }
+          .category-nav {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .category-item {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .category-item:hover {
+            color: #2874f0; /* Typical brand blue */
+        }
+        .category-img-wrapper {
+            position: relative;
+            margin-bottom: 8px;
+            height: 64px; /* Matches standard e-commerce icon sizes */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .category-img-wrapper img {
+            max-height: 100%;
+            width: auto;
+        }
+        .new-badge {
+            position: absolute;
+            top: -5px;
+            right: 15%;
+            background-color: #2874f0;
+            color: white;
+            font-size: 8px;
+            font-weight: bold;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        .category-text {
+            font-size: 14px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .dropdown-caret::after {
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand text-primary fw-bold italic" href="#">Flipkart</a>
+            
+            <form class="d-flex mx-auto d-none d-lg-block">
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-0"><i class="bi bi-search"></i></span>
+                    <input class="form-control search-input bg-light" type="search" placeholder="Search for Products, Brands and More">
+                </div>
+            </form>
+
+            <div class="d-flex align-items-center">
+                <div class="dropdown me-4">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-person-circle me-1"></i> Login
+                    </a>
+                </div>
+                <a href="#" class="nav-link me-4"><i class="bi bi-cart3 me-1"></i> Cart</a>
+                <a href="#" class="nav-link d-none d-md-block"><i class="bi bi-shop me-1"></i> Become a Seller</a>
+            </div>
+        </div>
+    </nav>
+
+   <div class="container-fluid category-nav">
+    <div class="row g-0 justify-content-center">
+        
+        <div class="col-auto px-3">
+            <a href="#" class="category-item">
+                <div class="category-img-wrapper">
+                    <span class="new-badge">NEW</span>
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/e00302d428f5c7be.png?q=100" alt="Minutes">
+                </div>
+                <div class="category-text">Minutes</div>
+            </a>
+        </div>
+
+        <div class="col-auto px-3">
+            <a href="#" class="category-item">
+                <div class="category-img-wrapper">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" alt="Mobiles">
+                </div>
+                <div class="category-text">Mobiles & Tablets</div>
+            </a>
+        </div>
+
+        <div class="col-auto px-3">
+            <a href="#" class="category-item">
+                <div class="category-img-wrapper">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/ff559cb9d803d424.png?q=100" alt="Fashion">
+                </div>
+                <div class="category-text dropdown-caret">Fashion</div>
+            </a>
+        </div>
+
+        <div class="col-auto px-3">
+            <a href="#" class="category-item">
+                <div class="category-img-wrapper">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/af646c36d74c4be9.png?q=100" alt="Electronics">
+                </div>
+                <div class="category-text dropdown-caret">Electronics</div>
+            </a>
+        </div>
+
+        <div class="col-auto px-3">
+            <a href="#" class="category-item">
+                <div class="category-img-wrapper">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/1788f177649e6991.png?q=100" alt="Home">
+                </div>
+                <div class="category-text dropdown-caret">Home & Furniture</div>
+            </a>
+        </div>
+
+        <div class="col-auto px-3">
+            <a href="#" class="category-item">
+                <div class="category-img-wrapper">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100" alt="Flights">
+                </div>
+                <div class="category-text">Flight Bookings</div>
+            </a>
+        </div>
+        <div class="col-auto px-3">
+    <a href="#" class="category-item">
+        <div class="category-img-wrapper">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/e90944802d996756.jpg?q=100" alt="TVs & Appliances">
+        </div>
+        <div class="category-text">TVs & Appliances</div>
+    </a>
+</div>
+
+<div class="col-auto px-3">
+    <a href="#" class="category-item">
+        <div class="category-img-wrapper">
+            <img src="data:image/jpeg;base64,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" alt="Beauty, Food..">
+        </div>
+        <div class="category-text dropdown-caret">Beauty, Food..</div>
+    </a>
+</div>
+        <div class="col-auto px-3">
+            <a href="#" class="category-item">
+                <div class="category-img-wrapper">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/64/64/image/e730a834ad950bae.png?q=100" alt="Grocery">
+                </div>
+                <div class="category-text">Grocery</div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    <div class="container-fluid px-lg-3">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/a64908ba9bf2fe36.jpg?q=60" class="d-block w-100" alt="Sale Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/3240/540/image/1338bd4fc60390d8.jpg?q=60" class="d-block w-100" alt="Sale Banner 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+  <div class="container-fluid px-lg-5 mt-4">
+        <div class="bg-white p-3 shadow-sm rounded">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fw-bold mb-0">Top Deals</h4>
+                <a href="#" class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-chevron-right"></i></a>
+            </div>
+            
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+                <div class="col text-center border-end">
+                    <div class="p-2 h-100">
+                        <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/projector/l/y/o/i9-pro-max-fhd-1080p-e03i31-10-e03i31-led-projector-egate-original-imahhsqubn4hj4jj.jpeg?q=60" class="img-fluid mb-2" style="height: 150px; object-fit: contain;" alt="Projector">
+                        <p class="mb-1 small">Projectors</p>
+                        <h6 class="text-success">Min. 50% Off</h6>
+                    </div>
+                </div>
+                <div class="col text-center border-end">
+                    <div class="p-2 h-100">
+                        <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/projector/l/y/o/i9-pro-max-fhd-1080p-e03i31-10-e03i31-led-projector-egate-original-imahhsqubn4hj4jj.jpeg?q=60" class="img-fluid mb-2" style="height: 150px; object-fit: contain;" alt="Speaker">
+                        <p class="mb-1 small">Speakers</p>
+                        <h6 class="text-success">Min. 40% Off</h6>
+                    </div>
+                </div>
+                <div class="col text-center border-end">
+                    <div class="p-2 h-100">
+                        <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" class="img-fluid mb-2" style="height: 150px; object-fit: contain;" alt="Monitor">
+                        <p class="mb-1 small">Monitors</p>
+                        <h6 class="text-success">From ₹7,999</h6>
+                    </div>
+                </div>
+                <div class="col text-center border-end">
+                    <div class="p-2 h-100">
+                        <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" class="img-fluid mb-2" style="height: 150px; object-fit: contain;" alt="Watch">
+                        <p class="mb-1 small">Smart Watches</p>
+                        <h6 class="text-success">Min. 60% Off</h6>
+                    </div>
+                </div>
+                <div class="col text-center border-end">
+                    <div class="p-2 h-100">
+                        <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" class="img-fluid mb-2" style="height: 150px; object-fit: contain;" alt="Camera">
+                        <p class="mb-1 small">Top Cameras</p>
+                        <h6 class="text-success">Shop Now</h6>
+                    </div>
+                </div>
+                <div class="col text-center bg-light d-none d-lg-block rounded">
+                    <div class="p-2 d-flex flex-column justify-content-center h-100">
+                        <p class="fw-bold mb-1">Shop your Fashion Needs</p>
+                        <button class="btn btn-dark btn-sm mx-auto">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="container-fluid px-lg-5 mt-4">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Trendy & on a budget</p>
+                        <h5 class="fw-bold">Jackets, Sweatshirts..</h5>
+                        <h4 class="fw-bolder text-warning">Min. 65% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=200&auto=format&fit=crop" alt="Jacket">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Snug winter picks</p>
+                        <h5 class="fw-bold">Trendy sweaters...</h5>
+                        <h4 class="fw-bolder text-warning">60-80% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=200&auto=format&fit=crop" alt="Sweater">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Ethnic vibes only</p>
+                        <h5 class="fw-bold">Trendy kurta sets</h5>
+                        <h4 class="fw-bolder text-warning">Min. 70% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=200&auto=format&fit=crop" alt="Kurta">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .sale-card {
+            background: linear-gradient(180deg, #00BCD4 0%, #00BCD4 70%, #C2185B 70%, #C2185B 100%);
+            border-radius: 4px;
+            min-height: 180px;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Arch effect for the model images as seen in the screen */
+        .arch-frame {
+            width: 120px;
+            height: 150px;
+            background: #fff;
+            border-radius: 60px 60px 0 0;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        .arch-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+  <div class="container-fluid px-lg-5 mt-4">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Trendy & on a budget</p>
+                        <h5 class="fw-bold">Jackets, Sweatshirts..</h5>
+                        <h4 class="fw-bolder text-warning">Min. 65% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=200&auto=format&fit=crop" alt="Jacket">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Snug winter picks</p>
+                        <h5 class="fw-bold">Trendy sweaters...</h5>
+                        <h4 class="fw-bolder text-warning">60-80% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=200&auto=format&fit=crop" alt="Sweater">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Ethnic vibes only</p>
+                        <h5 class="fw-bold">Trendy kurta sets</h5>
+                        <h4 class="fw-bolder text-warning">Min. 70% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=200&auto=format&fit=crop" alt="Kurta">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .sale-card {
+            background: linear-gradient(180deg, #00BCD4 0%, #00BCD4 70%, #C2185B 70%, #C2185B 100%);
+            border-radius: 4px;
+            min-height: 180px;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Arch effect for the model images as seen in the screen */
+        .arch-frame {
+            width: 120px;
+            height: 150px;
+            background: #fff;
+            border-radius: 60px 60px 0 0;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        .arch-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+  <div class="container-fluid px-lg-5 mt-4">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Trendy & on a budget</p>
+                        <h5 class="fw-bold">Jackets, Sweatshirts..</h5>
+                        <h4 class="fw-bolder text-warning">Min. 65% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=200&auto=format&fit=crop" alt="Jacket">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Snug winter picks</p>
+                        <h5 class="fw-bold">Trendy sweaters...</h5>
+                        <h4 class="fw-bolder text-warning">60-80% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=200&auto=format&fit=crop" alt="Sweater">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="sale-card p-3 d-flex justify-content-between align-items-center">
+                    <div class="text-white">
+                        <img src="https://logodix.com/logo/2012028.png" height="30" class="mb-2 bg-white p-1 rounded" alt="Brands">
+                        <p class="small mb-1">Ethnic vibes only</p>
+                        <h5 class="fw-bold">Trendy kurta sets</h5>
+                        <h4 class="fw-bolder text-warning">Min. 70% Off</h4>
+                    </div>
+                    <div class="arch-frame">
+                        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?q=80&w=200&auto=format&fit=crop" alt="Kurta">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .sale-card {
+            background: linear-gradient(180deg, #00BCD4 0%, #00BCD4 70%, #C2185B 70%, #C2185B 100%);
+            border-radius: 4px;
+            min-height: 180px;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Arch effect for the model images as seen in the screen */
+        .arch-frame {
+            width: 120px;
+            height: 150px;
+            background: #fff;
+            border-radius: 60px 60px 0 0;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        .arch-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+  <div class="container-fluid px-lg-5 mt-4 mb-5">
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="bg-white p-3 shadow-sm h-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="fw-bold mb-0">Best Deals on Furniture</h5>
+                        <a href="#" class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe-rack/5/g/s/12-12-0-4-4-tier-shoe-rack-organiser-black-plastic-storage-shelf-original-imahhgjg2waymywh.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Shoe Rack</div>
+                            <div class="text-success fw-bold small">Min. 50% Off</div>
+                        </div>
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe-rack/5/g/s/12-12-0-4-4-tier-shoe-rack-organiser-black-plastic-storage-shelf-original-imahhgjg2waymywh.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Wardrobes</div>
+                            <div class="text-success fw-bold small">Min. 50% Off</div>
+                        </div>
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe-rack/5/g/s/12-12-0-4-4-tier-shoe-rack-organiser-black-plastic-storage-shelf-original-imahhgjg2waymywh.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Home Temple</div>
+                            <div class="text-success fw-bold small">Min. 50% Off</div>
+                        </div>
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe-rack/5/g/s/12-12-0-4-4-tier-shoe-rack-organiser-black-plastic-storage-shelf-original-imahhgjg2waymywh.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Swings</div>
+                            <div class="text-success fw-bold small">Min. 50% Off</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="bg-white p-3 shadow-sm h-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="fw-bold mb-0">Hair & Skincare</h5>
+                        <a href="#" class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe/d/b/x/6-biss-2031-blu-wht-40-bruton" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Hair Removal</div>
+                            <div class="text-success fw-bold small">Min. 50% Off</div>
+                        </div>
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe/d/b/x/6-biss-2031-blu-wht-40-bruton-blue-original-imahczyufwkmpeyq.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Face Pack</div>
+                            <div class="text-success fw-bold small">Top Collection</div>
+                        </div>
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe/d/b/x/6-biss-2031-blu-wht-40-bruton-blue-original-imahczyufwkmpeyq.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Face Wash</div>
+                            <div class="text-success fw-bold small">Min. 50% Off</div>
+                        </div>
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/shoe/d/b/x/6-biss-2031-blu-wht-40-bruton-blue-original-imahczyufwkmpeyq.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Moisturizer</div>
+                            <div class="text-success fw-bold small">Min. 50% Off</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="bg-white p-3 shadow-sm h-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="fw-bold mb-0">Fashion's Top Deals</h5>
+                        <a href="#" class="btn btn-primary btn-sm rounded-circle"><i class="bi bi-chevron-right"></i></a>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/wall-clock/z/v/o/handpainted-peacock-wall-clock-32-5-wc-331-analog-divinecrafts-original-imahfq86hvchwxz2.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Men's Sports Shoes</div>
+                            <div class="text-success fw-bold small">Min. 70% Off</div>
+                        </div>
+                        <div class="col-6 border p-2 text-center">
+                            <img src="https://rukminim1.flixcart.com/image/420/420/xif0q/wall-clock/z/v/o/handpainted-peacock-wall-clock-32-5-wc-331-analog-divinecrafts-original-imahfq86hvchwxz2.jpeg?q=60" class="img-fluid mb-2" style="height: 100px; object-fit: contain;">
+                            <div class="small">Wrist Watches</div>
+                            <div class="text-success fw-bold small">Min. 90% Off</div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+  <div class="container-fluid px-lg-5 mt-4">
+        <div class="bg-white p-3 shadow-sm rounded">
+            <h4 class="fw-bold mb-4">Furniture Deals</h4>
+            <div class="d-flex overflow-x-auto text-center pb-3">
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/j5ihlzk0/bed-mattress/2/y/c/6-48-75-skbnnldb75x48x06-bonnell-spring-peps-original-imaevnpjqz2mwyrz.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Mattresses</p>
+                    <p class="fw-bold">From ₹2,990</p>
+                </div>
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/l4d2ljk0/sofa-sectional/x/j/l/left-facing-180-34-aqua-blue-241-3-polyester-80-steffan-l-sheped-original-imagf9zer8ptqhrh.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Sofa & Sectional</p>
+                    <p class="fw-bold">From ₹7,999</p>
+                </div>
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/office-study-chair/z/t/2/1-teak-sagun-58-42-js-29-beaatho-121-92-original-imagrwgshgp2bhwv.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Office Study Chairs</p>
+                    <p class="fw-bold">From ₹1,890</p>
+                </div>
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/jm9hfgw0/bed/h/g/g/king-na-rosewood-sheesham-bkwl05nhbs0401d1p-flipkart-perfect-original-imaf97cwhvgnwg95.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Beds</p>
+                    <p class="fw-bold">From ₹1,790</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="container-fluid px-lg-5 mt-4">
+        <div class="bg-white p-3 shadow-sm rounded">
+            <h4 class="fw-bold mb-4">Furniture Deals</h4>
+            <div class="d-flex overflow-x-auto text-center pb-3">
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/j5ihlzk0/bed-mattress/2/y/c/6-48-75-skbnnldb75x48x06-bonnell-spring-peps-original-imaevnpjqz2mwyrz.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Mattresses</p>
+                    <p class="fw-bold">From ₹2,990</p>
+                </div>
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/l4d2ljk0/sofa-sectional/x/j/l/left-facing-180-34-aqua-blue-241-3-polyester-80-steffan-l-sheped-original-imagf9zer8ptqhrh.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Sofa & Sectional</p>
+                    <p class="fw-bold">From ₹7,999</p>
+                </div>
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/office-study-chair/z/t/2/1-teak-sagun-58-42-js-29-beaatho-121-92-original-imagrwgshgp2bhwv.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Office Study Chairs</p>
+                    <p class="fw-bold">From ₹1,890</p>
+                </div>
+                <div class="px-3 border-end" style="min-width: 180px;">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/jm9hfgw0/bed/h/g/g/king-na-rosewood-sheesham-bkwl05nhbs0401d1p-flipkart-perfect-original-imaf97cwhvgnwg95.jpeg?q=60" class="img-fluid mb-2" style="height: 120px; object-fit: contain;">
+                    <p class="mb-0 small">Beds</p>
+                    <p class="fw-bold">From ₹1,790</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./image.png" width="1500px" alt="">
+  <footer class="bg-dark text-white mt-5 pt-5 pb-3">
+        <div class="container-fluid px-lg-5">
+            <div class="row border-bottom border-secondary pb-4 mb-4">
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="text-secondary small fw-bold">ABOUT</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="text-secondary small fw-bold">HELP</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Payments</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 mb-4">
+                    <h6 class="text-secondary small fw-bold">CONSUMER POLICY</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-white text-decoration-none">Terms Of Use</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Security</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 border-start border-secondary ps-lg-4">
+                    <h6 class="text-secondary small fw-bold">Mail Us:</h6>
+                    <p class="small text-secondary">
+                        Flipkart Internet Private Limited,<br>
+                        Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                        Outer Ring Road, Devarabeesanahalli Village,<br>
+                        Bengaluru, 560103, Karnataka, India
+                    </p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-secondary small fw-bold">Registered Office Address:</h6>
+                    <p class="small text-secondary">
+                        Flipkart Internet Private Limited,<br>
+                        Buildings Alyssa, Begonia & Clove Embassy Tech Village,<br>
+                        CIN : U51109KA2012PTC066107<br>
+                        Telephone: <span class="text-primary">044-45614700</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center small py-3">
+                <div class="col-md-8 d-flex flex-wrap gap-4">
+                    <span><i class="bi bi-shop text-warning me-1"></i> Become a Seller</span>
+                    <span><i class="bi bi-star text-warning me-1"></i> Advertise</span>
+                    <span><i class="bi bi-gift text-warning me-1"></i> Gift Cards</span>
+                    <span><i class="bi bi-question-circle text-warning me-1"></i> Help Center</span>
+                    <span>© 2007-2025 Flipkart.com</span>
+                </div>
+                <div class="col-md-4 mt-3 mt-md-0 text-md-end">
+                    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c4544e.svg" alt="Payments" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

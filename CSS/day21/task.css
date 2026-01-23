@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  letter-spacing: 4px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 25px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 36px;
+  color: #757575;
+  letter-spacing: 4px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 16px;
+}
+
+.grid-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 60px 0;
+}
+
+.grid-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.img-box, .text-box {
+  flex: 1;
+}
+
+.img-box img {
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.section-title {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.date-tag {
+  display: block;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  background-color: #f1f1f1;
+  padding: 0 4px;
+}
+
+.secondary-text {
+  color: #757575;
+  margin-top: 20px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 60px 0;
+}
+
+.menu-item {
+  margin-bottom: 30px;
+}
+
+.menu-item h3 {
+  font-weight: normal;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+
+.menu-item p {
+  color: #757575;
+}
+
+.address {
+  color: #607d8b;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 16px 8px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 15px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.contact-form button:hover {
+  background-color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 32px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .grid-section, .grid-section.reverse {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-text {
+    font-size: 24px;
+  }
+ 
+}

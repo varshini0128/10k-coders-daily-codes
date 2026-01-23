@@ -41,9 +41,11 @@ article{
 article:hover{
     background-color: violet ;
     transform: translate(400px) rotate(180deg);
-    transition-duration: 5s;
+    
     transform: linear;
     border-radius: 50%;
+    /* transition-property: height; */
+    transition-duration: 5s;
     background-image: conic-gradient(yellow,pink,rgb(138, 138, 242));
     transition-timing-function: ease-out;
  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <button id="ton">
+        turn on 
+    </button>
+    <button id="toff">
+        turn off
+    </button>
+    <script>
+        // i need image of bulb on and off
+        let ton=document.getElementById('ton')
+        let toff=document.getElementById('toff')
+        ton.addEventListener('click',()=>{
+            // images only
+            document.body.append("💡")
+        })
+        toff.addEventListener('click',()=>{
+            document.body.append("🔌")
+        })
+
+
+    </script>
+</body>
+</html>

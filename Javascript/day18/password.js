@@ -1,0 +1,12 @@
+body=document.body
+inp1=document.getElementById('inp1')
+show=document.getElementById('show')
+show.addEventListener('click',()=>{
+    if(inp1.type==='password'){
+        inp1.type='text'    
+        show.textContent='Hide'
+    }else{
+        inp1.type='password'
+        show.textContent='Show'
+    }
+})

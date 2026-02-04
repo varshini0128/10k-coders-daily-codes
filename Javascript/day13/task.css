@@ -1,0 +1,25 @@
+.ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.section1{
+    display: flex;
+  
+    
+}
+
+.section2{
+    display:flex;
+}
+.section3{
+    display:flex;
+}
+
+.div1{
+    border:2px solid;
+    background-color: grey;
+    text-align: center;
+    color:white;
+}

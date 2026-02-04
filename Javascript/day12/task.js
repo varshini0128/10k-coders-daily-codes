@@ -4,13 +4,13 @@ body.style.fontFamily = 'Arial, sans-serif';
 
 // navbar
 body.innerHTML = `
-<nav>
-    <ul>
-        <li>Home</li>
-        <li>My Food</li>
-        <li>Mail</li>
-    </ul>
-</nav>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>My Food</li>
+                <li>Mail</li>
+            </ul>
+        </nav>
 `;
 
 let nav = body.firstElementChild;

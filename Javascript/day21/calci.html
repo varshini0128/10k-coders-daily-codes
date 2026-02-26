@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    button{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        margin: 5px;
+        border: 1px solid;
+        border-radius: 10px;
+
+    }
+    input{
+        width: 430px;
+        height: 50px;
+        font-size: 20px;
+        margin-left: 8px;
+        display: block;
+        border: 1px solid;
+        border-radius: 10px;
+    }
+    .black{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    
+    <div id='div1'>
+        <input type="text" id="inp1">
+            <button class='black' onclick="Allclear()">C</button>
+            <button class='black' onclick="display('%')">%</button>
+            <button class='black' onclick="delete1()" >DEL</button>
+            <button class='black' onclick="display('/')">/</button><br>
+
+
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button class='black' onclick="display('*')">x</button><br>
+
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button  class='black' onclick="display('-')">-</button><br>
+
+
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button  class='black' onclick="display('+')">+</button><br>
+
+
+            <button onclick="display('00')">00</button>
+            <button onclick="display('0')">0</button>
+            <button id="dot" onclick="display('.')">.</button>
+            <button class='black' onclick="calculate()">=</button>
+    </div>
+    <script src="./calci.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            border-bottom: 1px solid black;
+            padding: 20px;
+        }
+        nav ul{
+            font-size: xx-large;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        nav ul li{
+            cursor: pointer;
+        }
+       
+        #sidebar form{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+         h2{
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+
+    </style>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Products</li>
+            <li>Contact</li>
+            <button id="btn1"><li>Login</li></button>
+        </ul>
+    </nav>
+   
+    <div id="sidebar" style="display:none; position:fixed; top:0; right:0; width:500px; height:100%; background:white; box-shadow:-2px 0 5px rgba(0,0,0,0.5); z-index:1000; padding:20px;">
+        <button id="closebtn" style="position:absolute; top:10px; right:10px;">Close</button>
+        <h2>Login</h2>
+        <form>
+            <!-- <label for="username">Username:</label><br> -->
+            <input type="text" id="username" name="username" placeholder=Username style=" color: black; border-radius: 5px;width: 200px; padding: 8px;">
+            <br><br>
+            <!-- <label for="password" >Password:</label><br> -->
+            <input type="password" id="password" name="password" placeholder=Password style=" color: black; border-radius: 5px; width: 200px; padding: 8px;"><br><br>
+            <button type="submit" id="loginbtn" style="background-color: cornflowerblue; color: white; border-radius: 5px;width: 200px; padding: 10px; border-style: none;">Submit</button>
+        </form>
+    </div>
+
+    <script src="./login.js"></script>
+</body>
+</html>
+ 

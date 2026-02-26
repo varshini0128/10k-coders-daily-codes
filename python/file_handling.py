@@ -45,7 +45,7 @@ modes:
 # with open('demo1.txt','w') as k:
 #     k.write('This is w mode')
 
-# no need of closing when we use with keyword to createor write
+# no need of closing when we use 'with' keyword to create or write
 
 # r ==> read only w ==> only write  a ==> only append
 # w+ ==> write, read
@@ -53,13 +53,13 @@ modes:
 # a+ ==> append, read
 
 
-# # w+ ==> create, write, read
-# with open('class2.txt' , 'w+') as k:
-#     k.write('This is w+ mode ==> write and read')
-#     k.seek(0)
-#     data = k.read()
-#     print(data)
-#     print(k.tell())    #gives the current position of cursor
+# w+ ==> create, write, read
+with open('class2.txt' , 'w+') as k:
+    k.write('This is w+ mode ==> write and read')
+    k.seek(0) #seek is used to 
+    data = k.read()
+    print(data)
+    print(k.tell())    #gives the current position of cursor
 
 # m=open('class2.txt','w+')
 # m.write('hello w+ mode')

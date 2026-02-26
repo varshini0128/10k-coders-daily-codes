@@ -1,3 +1,7 @@
+'mile'
+'lime' 
+
+
 str1 = input("Enter first string: ").lower()
 str2 = input("Enter second string: ").lower()
 
@@ -10,6 +14,8 @@ else:
 from collections import Counter
 a='listen'
 b='silent'
+k=Counter(a)
+print(k,"---------")
 if Counter(a)==Counter(b):
     print("The strings are anagrams.")
 else:

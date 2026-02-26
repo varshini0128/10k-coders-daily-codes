@@ -1,3 +1,6 @@
+121
+1221
+
 num = int(input("Enter a number: "))
 temp = num
 rev = 0

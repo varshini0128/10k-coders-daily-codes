@@ -1,5 +1,8 @@
 import mysql.connector
 import random
+import logging
+
+logging.basicConfig(filename='banklogin.log',level=logging.INFO,format='%(asctime)s-%(levelname)s-%(message)s')
 
 # ------------------ DATABASE CONNECTION ------------------
 con = mysql.connector.connect(
@@ -47,6 +50,7 @@ class BANK:
         con.commit()
 
         print("\n✅ Account created successfully!")
+        logging.info(f"New account created: {name}, Account No: {acc_no}, Type: {acc_type}")
         print("Account Number:", acc_no)
 
     # DEPOSIT
@@ -60,7 +64,7 @@ class BANK:
         )
         con.commit()
         print("✅ Amount deposited successfully")
-
+        
     # WITHDRAW
     def withdraw(self):
         acc_no = int(input("Enter account number: "))
@@ -74,19 +78,23 @@ class BANK:
 
         if data is None:
             print("❌ Account not found")
+            logging.warning(f"Failed withdrawal attempt for account {acc_no} - Account not found")
             return
 
         balance = data[0]
 
         if amount > balance:
             print("❌ Insufficient balance")
+            logging.warning(f"Failed withdrawal attempt for account {acc_no} - Insufficient balance")   
         else:
             cursor.execute(
                 "UPDATE holder_details SET balance = balance - %s WHERE account_no = %s",
                 (amount, acc_no)
+                logging.info(f"Withdrawal: {amount} withdrawn from account {acc_no}")
             )
             con.commit()
             print("✅ Withdrawal successful")
+            logging.info(f"Withdrawal: {amount} withdrawn from account {acc_no}")
 
     # CHECK BALANCE
     def check_balance(self):
@@ -103,6 +111,7 @@ class BANK:
             print("Current Balance: ₹", data[1])
         else:
             print("❌ Account not found")
+            logging.warning(f"Failed balance check attempt for account {acc_no} - Account not found")
 
         def check_details(self):
             acc_no = int(input("Enter account number: "))
@@ -124,6 +133,7 @@ class BANK:
                 print("Balance      : ₹", data[6])
             else:
                 print("❌ Account not found")
+                logging.warning(f"Failed account details check for account {acc_no} - Account not found")
 
 
 
@@ -150,6 +160,8 @@ while True:
         bank.check_balance()
     elif choice == "5":
         print("Thank you for using our bank 🏦")
+        logging.info("Bank application exited")
         break
     else:
         print("❌ Invalid choice")
+        logging.warning(f"Invalid menu choice: {choice}")

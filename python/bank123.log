@@ -1,0 +1,6 @@
+2026-02-23 19:54:01,278 - WARNING - Account details check for invalid account 7866006204
+2026-02-23 20:00:35,788 - INFO - New Saving Account Created: {'holder_name': 'varsh', 'aadhar_num': 123112211, 'mobile': '12121212121', 'IFSC_CODE': 'IFSC2026', 'account_number': 2357940283, 'sufficient_balance': 500}
+2026-02-23 20:01:04,249 - INFO - Deposit: 300 deposited to account 2357940283
+2026-02-23 20:01:25,829 - INFO - Withdraw: 300 withdrawn from account 2357940283
+2026-02-23 20:01:37,229 - INFO - Account Details Checked: 2357940283
+2026-02-23 20:02:00,396 - INFO - Bank application exited

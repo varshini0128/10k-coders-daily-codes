@@ -6,6 +6,8 @@ for i in range(1, 2):        # Outer loop → table number
 
 s = input("Enter a sentence: ")
 words = s.split()
+print(words)
+print("--------------------------")
 print("Word count:", len(words))
 
 s = input("Enter a string: ")
@@ -20,3 +22,4 @@ print(upper_lst)
 
 s = input("Enter string: ")
 print(s == s[::-1])
+print(s[::-1])

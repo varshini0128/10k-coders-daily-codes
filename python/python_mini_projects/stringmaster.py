@@ -20,6 +20,10 @@ print("\nYour base sentence is:")
 print(f"👉 {sentence}")
 
 print("\nComplete all 10 tasks!\n")
+# what does strip function do ?
+# strip() removes any leading and trailing whitespace from the string. It does not affect spaces between words, only those at the beginning and end of the string. For example:
+s = "   Hello World!   "
+print(s.strip())  # Output: "Hello World!"
 
 # ------------------ Level 1: LOWER ------------------
 ans = input("1) Type the sentence in LOWERCASE: ").strip()

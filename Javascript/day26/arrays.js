@@ -233,12 +233,14 @@ let arr17=[3,1,4,2,5,11,22,10,1,2]
 arr17.sort((e,f)=>{
     return f-e
 }   )
+
 console.log(arr17); // [1, 1, 2, 2, 3, 4, 5, 10, 11, 22]
 console.log(arr17,'********');
 
 
 // 18 find()
-//  method returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+//  method returns the value of the first element in the provided array that satisfies the provided testing function. 
+// If no values satisfy the testing function, undefined is returned.
 let arr18=[1,2,3,4,5,6,7,8,9]   
 let found=arr18.find((element,index)=>{
     return element>5,'----'

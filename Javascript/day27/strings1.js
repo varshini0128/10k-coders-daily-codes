@@ -115,11 +115,23 @@ console.log(kk.endsWith('e',2));
 //18. repeat()
 console.log(s1.repeat(10))
 
+// 19.includes()
+let str='hello'
+console.log(str.includes('l'));
 
 
+// 20. padstart()
+kit=5
+// console.log(kit.padStart(2,0));
+
+// console.log(str5.padEnd(2,0));
+
+// 21. charAt()
+console.log(str1.charAt(3));
 
 
-
+// 22. charcodeat()
+console.log(str3.charCodeAt(5));
 
 
 

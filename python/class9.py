@@ -50,15 +50,19 @@ class BANK:
         w2=int(input('enter account number: '))
         acc_found=False
         for x in BANK.holder_details:
-            if x['Acc_num']==w2:
+            if x['Acc_num']==w2 and x['holder_name']==w1:
                 acc_found=True
-                w3=int(input('enter withdraw amount'))
-
-                if  x['balance']>w3:
-                    x['balance']-=w3
-                    print('withdraw completed successfully')
+                w3=(input('enter withdraw amount'))
+                if type(w3)=='int':
+                    if  x['balance']>w3:
+                        x['balance']-=w3
+                        print('withdraw completed successfully')
+                    elif x['balance']<w3:
+                        print('insuffient balance')
                 else:
-                    print('check account number')
+                    print('for withdrawl only numbers are accepted please input numbers only')
+            else:
+                print('check account number')
                 return
 
         if not acc_found:
@@ -71,7 +75,7 @@ class BANK:
         c2=int(input('enter account number: '))
 
         for x in BANK.holder_details:
-            if x['Acc_num']==c2:
+            if x['Acc_num']==c2 and x['holder_name']==c1:
                 for k,v in x.items():
                     print(k,v)  
             else:
@@ -98,7 +102,12 @@ while True:
           5)check balance
           6)exit
           """)
+    
+
+
     n4=input('enter option:')
+
+    
     if n4=='1':
         obj.create_account()
     elif n4=='2':

@@ -50,7 +50,7 @@ print(s4)
 
 d = 'pYtHoN devLoPeR'
 res=d.swapcase()
-print(res)
+print(res,'dswapppppppppppppppppppppppppp')
 
 h = "pythondeve@loper"
 w=h.replace('python','java')    #word replacing
@@ -119,7 +119,7 @@ res2=''
 for x in h:
     result1=x+result1   #backward/reverse concatenating
     res2+=x             #forward concatenating 
-print(result1,res2)
+print(result1,res2,'********************')
 
 
 h = "AjayPython"
@@ -158,6 +158,7 @@ for ch in s:
 
 print(result)
 
+print(chr(94))# 91 to 96 symobols
 a = 'python'
 temp = {}
 for x in a :
@@ -230,9 +231,10 @@ print(a*b)  #(2+5j) * (5+6j)
 
 
 # #none type example
-# none1 = None
-# print(type(none1))
-# print(None)
+none1 = None
+print(type(none1))
+print(None)
+print(none1)
 
 
 # var3=10 
@@ -318,14 +320,14 @@ print(list1)
 #  #tuples are immutable 
 # #since tuple is immutable we cant perform append or other actions
 
-# tuple = (22, 7.0, "varsh", None, 'sri indu', 123456543, [1,2,3,4,5], (6,7,8))
+tuple = (22, 7.0, "varsh", None, 'sri indu', 123456543, [1,2,3,4,5], (6,7,8))
 # print(tuple) 
 # print(len(tuple))  #len(): returns no of values in a sequence 
 # print(tuple.count('varsh')) #count(): used to get the number of time a value is repeated 
 # print(tuple.count('vamshi')) #returns 0 if values are not in tuple or sequence
 # print(tuple[-1][2]) #double indexing 
 # print(tuple[-2][4])
-# # tuple[1] = 8.0 #gives error as tuple is immutable
+# tuple[1] = 8.0 #gives typeerror as tuple is immutable
 
 # #Task: Create a list with your name , college, cgpa, and later add your address to it using append 
 
@@ -341,14 +343,14 @@ print(list1)
 # #set: set is used to store unique and unordered elements
 # # set is mutable we can add, remove elements from it 
 
-# set1 = {1,2,3,1,2,3,'hema','rahul','satya'}
-# print(set1)
-# # print(set1[0]) gets error cant use indexing in set because it is unordered
+set1 = {1,2,3,1,2,3,'hema','rahul','satya'}
+print(set1)
+# print(set1[0]) gets error cant use indexing in set because it is unordered
 
-# set1.add(5)
-# print(set1) # it adds value 5 randomly we cant define which place to add 5 
-# set1.remove(3)
-# print(set1)
+set1.add(5)
+print(set1) # it adds value 5 randomly we cant define which place to add 5 
+set1.remove(3)
+print(set1)
 # froset=frozenset([1,2,3,4,5,1,2,3,4,5])
 # print(froset)
 
@@ -395,7 +397,8 @@ print(list1)
 # print(complex(a,b))
 
 
-# bool2 = True #note in python true value is considered as 1 and  false as 0
+# bool2 = True #note 
+# in python true value is considered as 1 and  false as 0
 # int4 = 4
 # print(bool2+int4)
 

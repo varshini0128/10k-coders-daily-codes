@@ -134,12 +134,12 @@
 #                     # Note: "==" operator compares the values of two variables, while "is" operator compares the memory locations of two variables
 #                     # eg: a == b , a is b
          
-# a = 10
-# b = 10.0
-# print(a==b)
-# print(a is b)
-# print(id(a))
-# print(id(b))
+a = 10
+b = 10.0
+print(a==b)
+print(a is b)
+print(id(a))
+print(id(b))
 
 # a = 10
 # b = 10
@@ -204,15 +204,15 @@ print(id(b))
 
 
 
-amount = 5763
-thousands = amount // 1000 # prints quotient
-print("1000s:", thousands)
+# amount = 5763
+# thousands = amount // 1000 # prints quotient
+# print("1000s:", thousands)
 
-print(5763 % 1000)
-print(36656 % 36000) #prints remainder
+# print(5763 % 1000)
+# print(36656 % 36000) #prints remainder
 
 
-# # Bitwise Operators:
+# # # Bitwise Operators:
 # Operators that perform operations on the binary representations of numbers, bit by bit. They manipulate the individual bits (0s and 1s) of a number.
 
 # Common bitwise operators include:
@@ -221,14 +221,14 @@ print(36656 % 36000) #prints remainder
 # 2. | (Bitwise OR)
 # 3. ^ (Bitwise XOR)
 # 4. ~ (Bitwise NOT)
-# 5. << (Left Shift)
-# 6. >> (Right Shift)
-anni = 33
-alex = 22
-print(anni & alex)
-print(alex | anni)
-print(~alex)
-print(alex>>2)
-print(anni<<3)
-print(anni^alex)
-print(~5)
+# # 5. << (Left Shift)
+# # 6. >> (Right Shift)
+# anni = 33
+# alex = 22
+# print(anni & alex)
+# print(alex | anni)
+# print(~alex)
+# print(alex>>2)
+# print(anni<<3)
+# print(anni^alex)
+# print(~5)

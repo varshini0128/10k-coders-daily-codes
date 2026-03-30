@@ -48,6 +48,7 @@ print(res)
 # 5. Merge lists & remove duplicates
 a = [1,2,3,4,6,3,4,2,4,4,22,2,34,3,2,3,2,3]
 b = [3,4,5,43,43,4,3,4,3,43,43,4,3,4,3,4,3]
+c=list(set(list(set(a))+list(set(b))))
 merged = []
 
 for x in a:
@@ -59,6 +60,7 @@ for x in b:
         merged.append(x)
 
 print(merged)
+print(c,'*************')
 
 # 6. Group list items into size 2
 lst = [1,2,3,4,5]
@@ -70,3 +72,13 @@ while i < len(lst):
     i += 2
 print(groups)
 
+
+# or
+items = [1, 2, 3, 4, 5, 6]
+pairs = []
+
+for i in range(0, len(items), 2):
+    pair = [items[i], items[i+1]]
+    pairs.append(pair)
+
+print(pairs)  # [[1, 2], [3, 4], [5, 6]]

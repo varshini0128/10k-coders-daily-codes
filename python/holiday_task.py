@@ -436,7 +436,7 @@ print(res)
 # 33. Find second largest element
 arr = [10, 20, 4, 45, 99]
 
-max1 = max2 = -999999
+max1 = max2 =100
 
 for x in arr:
     if x > max1:

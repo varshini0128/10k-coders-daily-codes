@@ -61,6 +61,7 @@ def check_num(h2):
         print('zero')
 check_num(23)
 
+
 l1=10
 l2=14
 l3=13
@@ -75,7 +76,6 @@ l3=13
 #     else:
 #         print('not prime')
 # prime(11)
-
 
 #factorial
 def fact(a):
@@ -123,7 +123,7 @@ details('ajay','322')
 
 def fun(a,*b,c='hi',d=20000):
     print(a)
-    print(d)
+    print(c)
 fun(2,222,333,22123,325)
 
 def d(**a):

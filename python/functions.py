@@ -1,4 +1,4 @@
-#Functions: It is a block of code which is used to perform qa certain action 
+#Functions: It is a block of code which is used to perform a certain action 
 #it can be run by calling it 
 #SYNTAX: def func_name(parameters)
 #types : built in functions, user defined functions

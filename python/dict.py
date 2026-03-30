@@ -30,7 +30,7 @@ school= [
         {'name':'arun','pin':101,'age':15}
 ]
 print(school[4])
-n=eval(input('enter in or student details: '))
+n=eval(input('enter no of student details: '))
 for x in school:
     if x['pin']==n or x['name']==n:
         print(x)

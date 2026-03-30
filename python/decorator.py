@@ -20,7 +20,7 @@ def decorator(time_c):
         start_time=time.time()
 
         for x in range(10):
-            # time.sleep(1)
+            time.sleep(1)
             print(x)
         end_time=time.time()
 

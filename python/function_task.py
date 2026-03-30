@@ -98,6 +98,8 @@ print("Fibonacci Series:", fib_numbers)
 
 
 # #check whether a number is perfect number using functions
+
+
 def is_perfect_number(num):
     if num <= 0:
         return False
@@ -111,8 +113,11 @@ if is_perfect_number(number):
     print(number, 'is a perfect number.')
 else:
     print(number, 'is not a perfect number.')
-
-
+perfect_list=[]
+for i in range(1,10000):#4 numbers=6,28,496,8128
+    if is_perfect_number(i):
+        perfect_list.append(i)
+print(perfect_list,'************************************')
 #write a program to check prime or not
 def is_prime(num1):
     if num1 <= 1:

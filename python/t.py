@@ -41,7 +41,7 @@ b = 20
 lcm = max(a, b)
 while True:
     if lcm % a == 0 and lcm % b == 0:
-        print(lcm)
+        print(lcm,'***')
         break
     lcm += 1
 
